@@ -57,8 +57,12 @@ public class PlayerController : MonoBehaviour, IRestartable {
 
     void IRestartable.Restart(GameController controller)
     {
-        Debug.Log("Restart from PlayerController");
         positionOnLane = defaultPositionOnLane;
         juiceIncrement = 0;
+    }
+
+    void IRestartable.Stop(GameController controller)
+    {
+
     }
 }

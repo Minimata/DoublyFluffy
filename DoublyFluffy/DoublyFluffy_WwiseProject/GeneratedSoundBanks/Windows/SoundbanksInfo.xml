@@ -16,5 +16,87 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="775889684" Name="Game_over_too_fast" ObjectPath="\Events\Default Work Unit\Game_over_too_fast"/>
+				<Event Id="957044181" Name="Game_over_too_slow" ObjectPath="\Events\Default Work Unit\Game_over_too_slow"/>
+				<Event Id="3725903807" Name="Music_start" ObjectPath="\Events\Default Work Unit\Music_start"/>
+				<Event Id="3579758495" Name="State_down" ObjectPath="\Events\Default Work Unit\State_down"/>
+				<Event Id="489003304" Name="State_Up" ObjectPath="\Events\Default Work Unit\State_Up"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="115080511" Language="SFX">
+					<ShortName>Basse_transition_2_mesures_160BPM.wav</ShortName>
+					<Path>SFX\Basse_transition_2_mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="127244324" Language="SFX">
+					<ShortName>State_2\Basse_stage_1_16mesures_160BPM.wav</ShortName>
+					<Path>SFX\State_2\Basse_stage_1_16mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="159727642" Language="SFX">
+					<ShortName>Eddy_wow.wav</ShortName>
+					<Path>SFX\Eddy_wow_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="246611107" Language="SFX">
+					<ShortName>Lead_stage_1_16mesures_160BPM.wav</ShortName>
+					<Path>SFX\Lead_stage_1_16mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="284547349" Language="SFX">
+					<ShortName>Too_slow.wav</ShortName>
+					<Path>SFX\Too_slow_9E69E797.wem</Path>
+				</File>
+				<File Id="413958571" Language="SFX">
+					<ShortName>Stage Down.wav</ShortName>
+					<Path>SFX\Stage Down_9E69E797.wem</Path>
+				</File>
+				<File Id="451011026" Language="SFX">
+					<ShortName>batterie_stage_2_16mesures_160BPM.wav</ShortName>
+					<Path>SFX\batterie_stage_2_16mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="454522426" Language="SFX">
+					<ShortName>Basse_transition_descente_2_mesures_160BPM.wav</ShortName>
+					<Path>SFX\Basse_transition_descente_2_mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="522735093" Language="SFX">
+					<ShortName>batterie_stage_1_16mesures_160BPM.wav</ShortName>
+					<Path>SFX\batterie_stage_1_16mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="606101183" Language="SFX">
+					<ShortName>Basse_stage_1_16mesures_160BPM.wav</ShortName>
+					<Path>SFX\Basse_stage_1_16mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="634659777" Language="SFX">
+					<ShortName>Stage Up.wav</ShortName>
+					<Path>SFX\Stage Up_9E69E797.wem</Path>
+				</File>
+				<File Id="684496588" Language="SFX">
+					<ShortName>State_3\batterie_stage_1_16mesures_160BPM.wav</ShortName>
+					<Path>SFX\State_3\batterie_stage_1_16mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="732126531" Language="SFX">
+					<ShortName>Lead_stage_2_16mesures_160BPM.wav</ShortName>
+					<Path>SFX\Lead_stage_2_16mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="750473923" Language="SFX">
+					<ShortName>Too_fast_Explosion.wav</ShortName>
+					<Path>SFX\Too_fast_Explosion_9E69E797.wem</Path>
+				</File>
+				<File Id="758779315" Language="SFX">
+					<ShortName>Lead_transition_descente_2_mesures_160BPM.wav</ShortName>
+					<Path>SFX\Lead_transition_descente_2_mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="875802478" Language="SFX">
+					<ShortName>basse_stage_2_16mesures_160BPM.wav</ShortName>
+					<Path>SFX\basse_stage_2_16mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="947501454" Language="SFX">
+					<ShortName>State_2\batterie_stage_1_16mesures_160BPM.wav</ShortName>
+					<Path>SFX\State_2\batterie_stage_1_16mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

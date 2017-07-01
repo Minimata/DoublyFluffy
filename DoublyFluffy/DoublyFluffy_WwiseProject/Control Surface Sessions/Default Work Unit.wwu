@@ -5,22 +5,17 @@
 			<ChildrenList>
 				<ControlSurfaceSession Name="Default Control Surface Session" ID="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}">
 					<ChildrenList>
-<<<<<<< Updated upstream
-						<ControlSurfaceBindingGroup Name="Global" ID="{C0921D72-5F64-4BFD-8709-75A3DDD07214}"/>
-						<ControlSurfaceBindingGroup Name="Current Selection" ID="{AE6E4C73-D6D8-4580-8A25-E263D824025B}">
-=======
+
 						<ControlSurfaceBindingGroup Name="Global" ID="{9F6E4582-86D6-42E3-904E-065B662DF7DD}"/>
 						<ControlSurfaceBindingGroup Name="Current Selection" ID="{2CB11C08-F9A3-44E7-860A-2D44FEE6D61D}">
->>>>>>> Stashed changes
+
 							<PropertyList>
 								<Property Name="GroupType" Type="int16" Value="4"/>
 							</PropertyList>
 							<ChildrenList>
-<<<<<<< Updated upstream
-								<ControlSurfaceBinding Name="Binding" ID="{A01B722B-9EA7-4997-A62A-EEFF1B18C44E}">
-=======
+
 								<ControlSurfaceBinding Name="Binding" ID="{6F2F39C8-0927-42A3-9147-83AD25F82715}">
->>>>>>> Stashed changes
+
 									<PropertyList>
 										<Property Name="TargetName" Type="string" Value="PassMidiNote"/>
 										<Property Name="TargetType" Type="int16" Value="1"/>
@@ -28,11 +23,9 @@
 								</ControlSurfaceBinding>
 							</ChildrenList>
 						</ControlSurfaceBindingGroup>
-<<<<<<< Updated upstream
-						<ControlSurfaceBindingGroup Name="View Groups" ID="{9831EE1A-F808-4415-B307-7F50CACFE42D}">
-=======
+
 						<ControlSurfaceBindingGroup Name="View Groups" ID="{5B6ED0C0-EC9C-4D97-9190-E122235B102C}">
->>>>>>> Stashed changes
+
 							<PropertyList>
 								<Property Name="GroupType" Type="int16" Value="3"/>
 							</PropertyList>

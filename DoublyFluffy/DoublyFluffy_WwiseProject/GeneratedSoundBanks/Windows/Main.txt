@@ -1,0 +1,42 @@
+Event	ID	Name			Wwise Object Path	Notes
+	489003304	State_Up			\Default Work Unit\State_Up	
+	775889684	Game_over_too_fast			\Default Work Unit\Game_over_too_fast	
+	957044181	Game_over_too_slow			\Default Work Unit\Game_over_too_slow	
+	3579758495	State_down			\Default Work Unit\State_down	
+	3725903807	Music_start			\Default Work Unit\Music_start	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3762137787	Player_life			\Default Work Unit\Player_life	
+
+State	ID	Name	State Group			Notes
+	655265632	Alive	Player_life			
+	748895195	None	Player_life			
+	1398680609	Dead_slow	Player_life			
+	3079415640	Dead_fast	Player_life			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	8629409	Dead_slow	Player_life	\Interactive Music Hierarchy\Default Work Unit\State_juicy_music		
+	677204877	Dead_fast	Player_life	\Interactive Music Hierarchy\Default Work Unit\State_juicy_music		
+
+Effect plug-ins	ID	Name	Type				Notes
+	4043410653	Pitche_schifter	Wwise Pitch Shifter			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	115080511	Basse_transition_2_mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Basse_transition_2_mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\Transition\Basse_transition_2_mesures_160BPM		576064
+	127244324	Basse_stage_1_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\State_2\Basse_stage_1_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_2\State 2\Basse_stage_1_16mesures_160BPM		4608064
+	159727642	Eddy_wow	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Eddy_wow_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\Transition\Eddy_wow		213328
+	246611107	Lead_stage_1_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Lead_stage_1_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_3\State 3\Lead_stage_1_16mesures_160BPM		4608064
+	284547349	Too_slow	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Too_slow_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_game_over\Too_slow		96064
+	413958571	Stage Down	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Stage Down_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_state_updown\Stage Down		396064
+	451011026	batterie_stage_2_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\batterie_stage_2_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_4\State 4\batterie_stage_2_16mesures_160BPM		4608064
+	454522426	Basse_transition_descente_2_mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Basse_transition_descente_2_mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\Transition_descendante\Basse_transition_descente_2_mesures_160BPM		576064
+	522735093	batterie_stage_1_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\batterie_stage_1_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_3\State 3\batterie_stage_1_16mesures_160BPM		4608064
+	606101183	Basse_stage_1_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Basse_stage_1_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_3\State 3\Basse_stage_1_16mesures_160BPM		4608064
+	634659777	Stage Up	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Stage Up_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_state_updown\Stage Up		648064
+	684496588	batterie_stage_1_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\State_3\batterie_stage_1_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_1\State 1\batterie_stage_1_16mesures_160BPM		4608064
+	732126531	Lead_stage_2_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Lead_stage_2_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_4\State 4\Lead_stage_2_16mesures_160BPM		4608064
+	750473923	Too_fast_Explosion	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Too_fast_Explosion_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_game_over\Too_fast_Explosion		1702412
+	758779315	Lead_transition_descente_2_mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Lead_transition_descente_2_mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\Transition_descendante\Lead_transition_descente_2_mesures_160BPM		576064
+	875802478	basse_stage_2_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\basse_stage_2_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_4\State 4\basse_stage_2_16mesures_160BPM		4608064
+	947501454	batterie_stage_1_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\State_2\batterie_stage_1_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_2\State 2\batterie_stage_1_16mesures_160BPM		4608064
+

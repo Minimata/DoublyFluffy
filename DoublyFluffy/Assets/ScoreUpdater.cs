@@ -26,4 +26,9 @@ public class ScoreUpdater : MonoBehaviour, IRestartable
         Debug.Log("Restart from ScoreUpdater");
         time = 0;
     }
+
+    void IRestartable.Stop(GameController controller)
+    {
+        
+    }
 }
