@@ -28,4 +28,11 @@ public class Player : MonoBehaviour {
 		float newXPosition = GameController.instance.leftPosition + (sizeOfLane * (positionOnLane + 1) - offset);
 		rb2d.transform.position = Vector3.Lerp(rb2d.transform.position, new Vector2(newXPosition, rb2d.transform.position.y), speed * Time.deltaTime);
 	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("On lane");
+        if (other.tag == "LaneBlue") Debug.Log("Blue");
+        else if (other.tag == "LaneYellow") Debug.Log("Yellow");
+    }
 }
