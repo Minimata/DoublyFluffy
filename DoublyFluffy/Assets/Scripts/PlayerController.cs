@@ -10,14 +10,23 @@ public class PlayerController : MonoBehaviour {
 
 	public float horizontalSpeed = 10f;
 
-	// Use this for initialization
-	void Start () {
-		rb2d = GetComponent<Rigidbody2D> ();
+    public GameObject juiciness;
+    private JuicinessController juicy;
+
+    private int juiceIncrement;
+
+    // Use this for initialization
+    void Start ()
+    {
+        juicy = juiciness.GetComponent<JuicinessController>();
+
+        rb2d = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        //Inputs and moving behavior
 		if (Input.GetKeyDown ("right")) {
 			if (positionOnLane < GameController.instance.nbLanes - 1) {
 				positionOnLane++;
@@ -34,12 +43,14 @@ public class PlayerController : MonoBehaviour {
 		float offset = (sizeOfLane / 2f);
 		float newXPosition = GameController.instance.leftPosition + (sizeOfLane * (positionOnLane + 1) - offset);
 		rb2d.transform.position = Vector3.Lerp(rb2d.transform.position, new Vector3(newXPosition, rb2d.transform.position.y, transform.position.z), horizontalSpeed * Time.deltaTime);
+
+        //Juice control
+	    juicy.juice += juiceIncrement;
 	}
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("On lane");
-        if (other.tag == "LaneBlue") Debug.Log("Blue");
-        else if (other.tag == "LaneYellow") Debug.Log("Yellow");
+       if (other.tag == "LaneBlue") juiceIncrement = -1;
+       else if (other.tag == "LaneYellow") juiceIncrement = 1;
     }
 }

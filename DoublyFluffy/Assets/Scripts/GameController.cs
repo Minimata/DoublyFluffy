@@ -12,8 +12,8 @@ public class GameController : MonoBehaviour {
 	public int nbLanes; 
 
     public GameObject ground;
-    public GameObject juiciness;
 
+    public GameObject juiciness;
     private JuicinessController juicy;
 
 	void Awake(){
