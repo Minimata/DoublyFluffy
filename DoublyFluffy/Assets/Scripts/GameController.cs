@@ -61,7 +61,7 @@ public class GameController : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            //AkSoundEngine.PostEvent("Restart", null);
+            AkSoundEngine.PostEvent("Restart", gameObject);
             Restart();
         }
         if (Input.GetKeyDown(KeyCode.Q)) Application.Quit();

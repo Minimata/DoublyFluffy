@@ -22,7 +22,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="6P08geHpLUqOhiScZ0E774NCXCjgzupMtPxBGV5eco8="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="jtc0+vurI06TIuxtf7lmTw=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="gkVun9aG40KQTgZbZi333QFHVwv/////CByxLKP550SGCi1E/ubWHQFHVwv/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="gkVun9aG40KQTgZbZi333QEpjBb/////CByxLKP550SGCi1E/ubWHQEpjBb/////"/>
 				<Property Name="Interactive Music\x64_{02DE65D1-09A9-4430-BDF7-849AC775CBDC} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAgGxAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{0E3947F3-DF30-4091-A815-BA5305A3A4A4} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAAENAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{2312EC8F-055C-452B-8B98-234EE30A632B} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAAENAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
@@ -85,7 +85,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_19_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="9ReOlp2Fw06sdNPlzQwRyg=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="//zYzTz28kC0GsvZ8OYQyfUXjpadhcNOrHTT5c0MEco="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="SS+g7Ln2KUeXiYATB2Oo2g=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value="ya4sRpgV4UCRh/uVuTv9zDKhQzh6qD1NkPbYVFMqlc6kC+Unrd95TpTyuDDKJXcT"/>
