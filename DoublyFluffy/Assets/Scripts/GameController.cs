@@ -43,7 +43,7 @@ public class GameController : MonoBehaviour {
         leftPosition = -(xMax/2);
         sizeOfLane = xMax/nbLanes;
     }
-
+    
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.R)) Restart();
@@ -58,4 +58,18 @@ public class GameController : MonoBehaviour {
             comp.Restart(this);
         }
     }
+
+	public void GameOver(){
+		ground.GetComponent<GroundController> ().speed = 0f;
+		Time.timeScale = 0;
+	}
+
+	public void Victory(){
+		
+	}
+
+	public void Defeat(){
+		
+	}
+    
 }

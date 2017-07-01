@@ -29,11 +29,15 @@ public class JuicinessController : MonoBehaviour, IRestartable
 	    {
 	        Debug.Log("Juice too low.");
 	        juice = 0;
+			GameController.instance.GameOver ();
+			GameController.instance.Defeat ();
 	    }
         else if (juice > maxJuice)
 	    {
 	        Debug.Log("JUICE TOO HIGH OMG !!!");
 	        juice = maxJuice;
+			GameController.instance.GameOver ();
+			GameController.instance.Defeat();
 	    }
 	}
 

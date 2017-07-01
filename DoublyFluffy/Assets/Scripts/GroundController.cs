@@ -5,7 +5,7 @@ using UnityEngine;
 public class GroundController : MonoBehaviour, IRestartable
 {
 
-    [SerializeField] private float speed = 1.0f;
+    public float speed = 1.0f;
     public int nbLanes = 5;
 
     public GameObject juiciness;
@@ -15,7 +15,6 @@ public class GroundController : MonoBehaviour, IRestartable
     void Start ()
     {
         juicy = juiciness.GetComponent<JuicinessController>();
-
     }
 	
 	// Update is called once per frame
