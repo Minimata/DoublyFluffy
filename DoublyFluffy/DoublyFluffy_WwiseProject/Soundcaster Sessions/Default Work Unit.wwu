@@ -56,8 +56,8 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="State_3" ID="{8CF6AE98-6839-4EE6-B266-BF5EC45C2117}"/>
-						<CurrentStateRef Name="Alive" ID="{D545BAF4-88E3-44E1-89E5-FFAC84C50B6A}"/>
+						<CurrentStateRef Name="State_0" ID="{C9F56461-FDBD-4598-A4D1-EA82F7A0AF36}"/>
+						<CurrentStateRef Name="Dead_fast" ID="{120F8827-ECAF-4510-A68F-6E220DB40408}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
