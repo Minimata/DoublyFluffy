@@ -25,14 +25,14 @@
 				<Event Id="957044181" Name="Game_over_too_slow" ObjectPath="\Events\Default Work Unit\Game_over_too_slow"/>
 				<Event Id="3725903807" Name="Music_start" ObjectPath="\Events\Default Work Unit\Music_start"/>
 				<Event Id="1203400786" Name="Restart" ObjectPath="\Events\Default Work Unit\Restart"/>
-				<Event Id="3579758495" Name="State_down" ObjectPath="\Events\Default Work Unit\State_down"/>
-				<Event Id="489003304" Name="State_Up" ObjectPath="\Events\Default Work Unit\State_Up"/>
+				<Event Id="3579758495" Name="State_down" ObjectPath="\Events\Default Work Unit\State_down" MaxAttenuation="0.000000"/>
+				<Event Id="489003304" Name="State_Up" ObjectPath="\Events\Default Work Unit\State_Up" MaxAttenuation="0.000000"/>
 				<Event Id="4246082463" Name="ToState0" ObjectPath="\Events\Default Work Unit\ToState0" MaxAttenuation="0.000000"/>
 				<Event Id="4246082462" Name="ToState1" ObjectPath="\Events\Default Work Unit\ToState1" MaxAttenuation="0.000000"/>
 				<Event Id="4246082461" Name="ToState2" ObjectPath="\Events\Default Work Unit\ToState2" MaxAttenuation="0.000000"/>
 				<Event Id="4246082460" Name="ToState3" ObjectPath="\Events\Default Work Unit\ToState3" MaxAttenuation="0.000000"/>
 				<Event Id="4246082459" Name="ToState4" ObjectPath="\Events\Default Work Unit\ToState4" MaxAttenuation="0.000000"/>
-				<Event Id="2716678721" Name="Victory" ObjectPath="\Events\Default Work Unit\Victory"/>
+				<Event Id="2716678721" Name="Victory" ObjectPath="\Events\Default Work Unit\Victory" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="115080511" Language="SFX">
@@ -47,10 +47,6 @@
 					<ShortName>Eddy_wow.wav</ShortName>
 					<Path>SFX\Eddy_wow_4B8CC0C5.wem</Path>
 				</File>
-				<File Id="168054633" Language="SFX">
-					<ShortName>Bomberman victory theme.wav</ShortName>
-					<Path>SFX\Bomberman victory theme_9E69E797.wem</Path>
-				</File>
 				<File Id="245027827" Language="SFX">
 					<ShortName>Daft Punk One More Time Vocal Effect.wav</ShortName>
 					<Path>SFX\Daft Punk One More Time Vocal Effect_346275D6.wem</Path>
@@ -62,10 +58,6 @@
 				<File Id="284547349" Language="SFX">
 					<ShortName>Too_slow.wav</ShortName>
 					<Path>SFX\Too_slow_9E69E797.wem</Path>
-				</File>
-				<File Id="413958571" Language="SFX">
-					<ShortName>Stage Down.wav</ShortName>
-					<Path>SFX\Stage Down_9E69E797.wem</Path>
 				</File>
 				<File Id="451011026" Language="SFX">
 					<ShortName>batterie_stage_2_16mesures_160BPM.wav</ShortName>
@@ -82,10 +74,6 @@
 				<File Id="606101183" Language="SFX">
 					<ShortName>Basse_stage_1_16mesures_160BPM.wav</ShortName>
 					<Path>SFX\Basse_stage_1_16mesures_160BPM_4B8CC0C5.wem</Path>
-				</File>
-				<File Id="634659777" Language="SFX">
-					<ShortName>Stage Up.wav</ShortName>
-					<Path>SFX\Stage Up_9E69E797.wem</Path>
 				</File>
 				<File Id="684496588" Language="SFX">
 					<ShortName>State_3\batterie_stage_1_16mesures_160BPM.wav</ShortName>

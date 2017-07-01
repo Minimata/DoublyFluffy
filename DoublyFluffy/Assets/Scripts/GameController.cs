@@ -62,12 +62,13 @@ public class GameController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.R))
         {
             AkSoundEngine.PostEvent("Restart", gameObject);
-            Restart();
+			Restart();
         }
         if (Input.GetKeyDown(KeyCode.Q)) Application.Quit();
 		if (Input.GetKeyDown (KeyCode.Space) && nextLevel > 0) {
 			SceneManager.LoadScene (nextLevel);
-			Restart ();
+            Time.timeScale = 1;
+			nextLevel = -1;
 		}
 
     }

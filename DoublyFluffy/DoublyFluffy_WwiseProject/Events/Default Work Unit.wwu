@@ -125,28 +125,8 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="State_Up" ID="{755725FB-2885-4F6B-8C67-B54F86260552}">
-					<ChildrenList>
-						<Action Name="Play" ID="{419DBCC1-3184-4B19-AC3E-75EB531BE54A}" ShortID="437297694" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{60E52AFC-F727-4DA6-ACBE-E5F142DD832E}" Global="false">
-									<ObjectRef Name="Stage Up" ID="{724B7E0E-1447-4F22-BC2B-9E3D1BA82E9B}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="State_down" ID="{307D701E-4880-4BCF-9DAE-28094D5977A7}">
-					<ChildrenList>
-						<Action Name="Play" ID="{7E57AF46-161F-43F1-B16B-0B73DE1FA8E7}" ShortID="906116890" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{8940F90B-08C0-485D-94FB-CC9FE5FB6555}" Global="false">
-									<ObjectRef Name="Stage Down" ID="{0B9FF980-688B-44F3-A0EE-DBDAC2BF7E78}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				<Event Name="State_Up" ID="{755725FB-2885-4F6B-8C67-B54F86260552}"/>
+				<Event Name="State_down" ID="{307D701E-4880-4BCF-9DAE-28094D5977A7}"/>
 				<Event Name="ToState1" ID="{88D4DECA-CDD6-432B-A17F-A3F5D8D7EB4C}">
 					<ChildrenList>
 						<Action Name="Set State" ID="{9A2841D8-FC08-48E7-BD9C-386D61E1019B}" ShortID="792937683" Type="SetState" Scope="All" Global="true">
@@ -197,31 +177,38 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Victory" ID="{17309A51-0621-4E45-B6D4-90F828E29C8B}">
-					<ChildrenList>
-						<Action Name="Set State" ID="{47BBE334-29CD-4400-9C77-1AEDA7806F8D}" ShortID="52376121" Type="SetState" Scope="All" Global="true">
-							<SetItemParam>
-								<Group Name="State_juicyiness" ID="{462CAEC9-1598-40E1-9187-FB95B93BFDCC}"/>
-								<GroupItem Name="None" ID="{9A3097DC-7365-4643-8DEF-3DB5DF8EEE63}"/>
-							</SetItemParam>
-						</Action>
-						<Action Name="Play" ID="{A3AAA421-07E4-46DD-B6FD-98F3FEEBADD1}" ShortID="792283569" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{1291ED69-041D-49D8-BC1D-A86A95490443}" Global="false">
-									<ObjectRef Name="Bomberman victory theme" ID="{EA2F0FE4-5539-4F99-A0BB-F8610ABF2619}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				<Event Name="Victory" ID="{17309A51-0621-4E45-B6D4-90F828E29C8B}"/>
 				<Event Name="Restart" ID="{A90DC759-A2AE-4273-8F2D-CD746A664F99}">
 					<ChildrenList>
+						<Action Name="Stop All" ID="{1E7D2CF5-5A8C-4429-9285-2C424BF455EE}" ShortID="427686291" Type="Stop" Scope="All" Global="true"/>
 						<Action Name="Play" ID="{82384BD3-E587-45C6-A90C-56B84A94B84C}" ShortID="960636592" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{FE772BD4-1682-470F-B18D-970061521132}" Global="false">
 									<ObjectRef Name="Daft Punk One More Time Vocal Effect" ID="{E90EF879-0362-42BE-B00D-35582767DA48}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
 								</Element>
 							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{2C9E6491-AE7F-4138-8C99-4027A08802E2}" ShortID="571320789" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{5D63F264-4C25-4041-B5C4-867BC88B7739}" Global="false">
+									<ObjectRef Name="State_juicy_music" ID="{431002E0-EA22-402E-8BB4-FF36180BD112}" WorkUnitID="{7D885A61-6FDD-41A5-892B-AC6A054BF709}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Set State" ID="{CB0FBB9F-2FE8-4AD1-9567-1B5D1C538126}" ShortID="101892569" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="State_juicyiness" ID="{462CAEC9-1598-40E1-9187-FB95B93BFDCC}"/>
+								<GroupItem Name="State_1" ID="{46F92DB8-39CD-48A9-B0A9-22E9CB450462}"/>
+							</SetItemParam>
+						</Action>
+						<Action Name="Set State" ID="{7649FE29-3C1D-46FE-A824-3186F29FA472}" ShortID="790737950" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="Player_life" ID="{3843A132-A87A-4D3D-90F6-D854532A95CE}"/>
+								<GroupItem Name="Alive" ID="{D545BAF4-88E3-44E1-89E5-FFAC84C50B6A}"/>
+							</SetItemParam>
 						</Action>
 					</ChildrenList>
 				</Event>
