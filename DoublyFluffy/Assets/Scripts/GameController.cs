@@ -34,4 +34,17 @@ public class GameController : MonoBehaviour {
         sizeOfLane = xMax/nbLanes;
     }
 
+	public void GameOver(){
+		ground.GetComponent<GroundController> ().speed = 0f;
+		Time.timeScale = 0;
+	}
+
+	public void Victory(){
+		
+	}
+
+	public void Defeat(){
+		
+	}
+
 }
