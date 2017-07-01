@@ -26,6 +26,104 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Sons_state_updown" ID="{CDD8FCFF-F63C-40F2-B41A-CBD9F0E610C9}" ShortID="654465429">
+					<ChildrenList>
+						<Sound Name="Stage Down" ID="{0B9FF980-688B-44F3-A0EE-DBDAC2BF7E78}" ShortID="688707756" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Stage Down" ID="{7BF02D4C-C9FE-44EF-BB78-2041C0B33944}" ShortID="413958571">
+									<Language>SFX</Language>
+									<AudioFile>Stage Down.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Stage Down" ID="{7BF02D4C-C9FE-44EF-BB78-2041C0B33944}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Stage Up" ID="{724B7E0E-1447-4F22-BC2B-9E3D1BA82E9B}" ShortID="733391707" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Stage Up" ID="{1F3A34E8-C2CB-4F4D-BCE3-568E41EBE9B5}" ShortID="634659777">
+									<Language>SFX</Language>
+									<AudioFile>Stage Up.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Stage Up" ID="{1F3A34E8-C2CB-4F4D-BCE3-568E41EBE9B5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Sons_game_over" ID="{8AE8C3F2-6BA1-4A2F-A5AE-48F62F3B5A67}" ShortID="431308155">
+					<ChildrenList>
+						<Sound Name="Too_fast_Explosion" ID="{0BC9D159-9664-4F3C-9532-D0D58666BBA1}" ShortID="287648452" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Too_fast_Explosion" ID="{51250FCB-3276-42D6-BD60-4C83CD9FF80C}" ShortID="750473923">
+									<Language>SFX</Language>
+									<AudioFile>Too_fast_Explosion.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Too_fast_Explosion" ID="{51250FCB-3276-42D6-BD60-4C83CD9FF80C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Too_slow" ID="{FCAC5048-4536-45F8-9BFF-8FEF55CC46DA}" ShortID="222896529" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Too_slow" ID="{BE0DADE1-A209-4BF3-9C6C-69F5B76A0CBF}" ShortID="284547349">
+									<Language>SFX</Language>
+									<AudioFile>Too_slow.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Too_slow" ID="{BE0DADE1-A209-4BF3-9C6C-69F5B76A0CBF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

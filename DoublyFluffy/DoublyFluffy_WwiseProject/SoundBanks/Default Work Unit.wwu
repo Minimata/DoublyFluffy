@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E8BB4FBA-5122-4EBE-A263-D45B2FA5EC12}" SchemaVersion="75">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{E8BB4FBA-5122-4EBE-A263-D45B2FA5EC12}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{E8BB4FBA-5122-4EBE-A263-D45B2FA5EC12}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{FA34D78E-ABFB-4E23-9322-EC6D7FB9664F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Music_start" ID="{9F624FEC-255D-40B8-BC65-E55F1C49651A}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Game_over_too_fast" ID="{BCDF6C84-88B3-431E-B304-68E138A56B9A}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Game_over_too_slow" ID="{077C244A-1C44-44D8-9197-998A44D0CD48}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="State_down" ID="{307D701E-4880-4BCF-9DAE-28094D5977A7}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="State_Up" ID="{755725FB-2885-4F6B-8C67-B54F86260552}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

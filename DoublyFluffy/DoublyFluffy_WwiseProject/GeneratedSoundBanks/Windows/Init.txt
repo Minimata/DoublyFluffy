@@ -1,3 +1,19 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1617566071	State_juicyiness			\Default Work Unit\State_juicyiness	
+	3762137787	Player_life			\Default Work Unit\Player_life	
+
+State	ID	Name	State Group			Notes
+	748895195	None	State_juicyiness			
+	1277114377	State_4	State_juicyiness			
+	1277114380	State_1	State_juicyiness			
+	1277114381	State_0	State_juicyiness			
+	1277114382	State_3	State_juicyiness			
+	1277114383	State_2	State_juicyiness			
+	655265632	Alive	Player_life			
+	748895195	None	Player_life			
+	1398680609	Dead_slow	Player_life			
+	3079415640	Dead_fast	Player_life			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

@@ -13,11 +13,15 @@
 						<State Name="State_0" ID="{C9F56461-FDBD-4598-A4D1-EA82F7A0AF36}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="Player_life" ID="{2F34F918-2E7E-4758-8AA2-CE20E7BB8036}">
+				<StateGroup Name="Player_life" ID="{3843A132-A87A-4D3D-90F6-D854532A95CE}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="5"/>
+					</PropertyList>
 					<ChildrenList>
-						<State Name="None" ID="{590CFE40-91FF-4771-BFBB-C27E4B2C92C7}"/>
-						<State Name="Dead" ID="{985A7157-885C-4120-8BAF-B4D7E977C53F}"/>
-						<State Name="Alive" ID="{79F53018-8E37-4673-9E68-0E92EF9FFEAD}"/>
+						<State Name="None" ID="{DD72E849-3EF1-4936-A93C-F627E8BEC6B0}"/>
+						<State Name="Alive" ID="{D545BAF4-88E3-44E1-89E5-FFAC84C50B6A}"/>
+						<State Name="Dead_fast" ID="{120F8827-ECAF-4510-A68F-6E220DB40408}"/>
+						<State Name="Dead_slow" ID="{128E9280-9CF4-4AF9-82D3-B1B9A4A2739E}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
