@@ -9,7 +9,6 @@ public class GroundController : MonoBehaviour
     public int nbLanes = 5;
 
     public GameObject juiciness;
-
     private JuicinessController juicy;
 
     // Use this for initialization

@@ -24,5 +24,8 @@ public class JuicinessController : MonoBehaviour
 	{
 	    int stateWidth = maxJuice / nbStates;
 	    currentState = juicy / stateWidth;
+
+        if(juicy < 0) Debug.Log("Juice too low.");
+        else if(juicy > maxJuice) Debug.Log("JUICE TOO HIGH OMG !!!");
 	}
 }
