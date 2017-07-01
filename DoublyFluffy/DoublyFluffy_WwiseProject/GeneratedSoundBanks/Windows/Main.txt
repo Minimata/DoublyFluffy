@@ -4,6 +4,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	957044181	Game_over_too_slow			\Default Work Unit\Game_over_too_slow	
 	3579758495	State_down			\Default Work Unit\State_down	
 	3725903807	Music_start			\Default Work Unit\Music_start	
+	4246082459	ToState4			\Default Work Unit\ToState4	
+	4246082460	ToState3			\Default Work Unit\ToState3	
+	4246082461	ToState2			\Default Work Unit\ToState2	
+	4246082462	ToState1			\Default Work Unit\ToState1	
+	4246082463	ToState0			\Default Work Unit\ToState0	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	3762137787	Player_life			\Default Work Unit\Player_life	

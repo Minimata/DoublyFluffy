@@ -18,6 +18,11 @@ namespace AK
         static const AkUniqueID MUSIC_START = 3725903807U;
         static const AkUniqueID STATE_DOWN = 3579758495U;
         static const AkUniqueID STATE_UP = 489003304U;
+        static const AkUniqueID TOSTATE0 = 4246082463U;
+        static const AkUniqueID TOSTATE1 = 4246082462U;
+        static const AkUniqueID TOSTATE2 = 4246082461U;
+        static const AkUniqueID TOSTATE3 = 4246082460U;
+        static const AkUniqueID TOSTATE4 = 4246082459U;
     } // namespace EVENTS
 
     namespace STATES

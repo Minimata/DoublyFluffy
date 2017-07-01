@@ -26,6 +26,11 @@
 				<Event Id="3725903807" Name="Music_start" ObjectPath="\Events\Default Work Unit\Music_start"/>
 				<Event Id="3579758495" Name="State_down" ObjectPath="\Events\Default Work Unit\State_down"/>
 				<Event Id="489003304" Name="State_Up" ObjectPath="\Events\Default Work Unit\State_Up"/>
+				<Event Id="4246082463" Name="ToState0" ObjectPath="\Events\Default Work Unit\ToState0" MaxAttenuation="0.000000"/>
+				<Event Id="4246082462" Name="ToState1" ObjectPath="\Events\Default Work Unit\ToState1" MaxAttenuation="0.000000"/>
+				<Event Id="4246082461" Name="ToState2" ObjectPath="\Events\Default Work Unit\ToState2" MaxAttenuation="0.000000"/>
+				<Event Id="4246082460" Name="ToState3" ObjectPath="\Events\Default Work Unit\ToState3" MaxAttenuation="0.000000"/>
+				<Event Id="4246082459" Name="ToState4" ObjectPath="\Events\Default Work Unit\ToState4" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="115080511" Language="SFX">
