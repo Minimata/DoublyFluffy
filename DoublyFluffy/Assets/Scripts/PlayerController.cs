@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour, IRestartable {
     void OnTriggerStay2D(Collider2D other)
     {
        if (other.tag == "LaneBlue") juiceIncrement = -1;
-       else if (other.tag == "LaneYellow") juiceIncrement = 1;
+       else if (other.tag == "LaneYellow") juiceIncrement = 20;
     }
 
     void IRestartable.Restart(GameController controller)
