@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour {
 	public static GameController instance;
 	[HideInInspector] public float sizeOfLane;
     [HideInInspector] public float leftPosition;
-	public int nbLane = 5;
+	public int nbLanes; 
 
     public GameObject ground;
     public GameObject juiciness;
@@ -24,16 +24,14 @@ public class GameController : MonoBehaviour {
 		}
 	}
 	// Use this for initialization
-	void Start ()
-	{
-	    juicy = juiciness.GetComponent<JuicinessController>();
+    void Start()
+    {
+        juicy = juiciness.GetComponent<JuicinessController>();
 
-		float xMax = ground.GetComponent<GroundController>().nbLanes;
-		leftPosition = -xMax;
-		sizeOfLane = (xMax*2)/nbLane;
-	}
-
-	
-
+        nbLanes = ground.GetComponent<GroundController>().nbLanes;
+        float xMax = nbLanes;
+        leftPosition = -(xMax/2);
+        sizeOfLane = xMax/nbLanes;
+    }
 
 }
