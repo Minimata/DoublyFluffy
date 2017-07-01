@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour, IRestartable {
     {
         positionOnLane = defaultPositionOnLane;
         juiceIncrement = 0;
+		levelEnded = false;
     }
 
     void IRestartable.Stop(GameController controller)
