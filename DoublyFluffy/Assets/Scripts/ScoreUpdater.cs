@@ -13,22 +13,31 @@ public class ScoreUpdater : MonoBehaviour, IRestartable
 	{
 	    time = 0;
 	    score = GetComponent<Text>();
+		StartCoroutine (RunTimer ());
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-	    time += Time.deltaTime;
-		score.text = "Score \r " + Math.Round(time, 3);
 	}
 
     void IRestartable.Restart(GameController controller)
     {
         time = 0;
+		StartCoroutine (RunTimer ());
     }
 
     void IRestartable.Stop(GameController controller)
     {
-        
+		StopCoroutine (RunTimer ());
     }
+
+	private IEnumerator RunTimer(){
+		while (true) {
+			yield return new WaitForSeconds(0.001f);
+			time += 0.001f;
+			print ("Time" + time);
+			score.text = "Score \r " + Math.Round(time*10f, 3);
+		}
+	}
 }
