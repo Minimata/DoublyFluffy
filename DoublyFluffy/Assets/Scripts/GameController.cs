@@ -82,6 +82,7 @@ public class GameController : MonoBehaviour {
     void Restart()
     {
         Time.timeScale = 1;
+		nextLevel = -1;
         PlayableUI();
 
         foreach (var comp in rest)
