@@ -21,20 +21,29 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="775889684" Name="Game_over_too_fast" ObjectPath="\Events\Default Work Unit\Game_over_too_fast"/>
-				<Event Id="957044181" Name="Game_over_too_slow" ObjectPath="\Events\Default Work Unit\Game_over_too_slow"/>
-				<Event Id="3725903807" Name="Music_start" ObjectPath="\Events\Default Work Unit\Music_start"/>
-				<Event Id="1203400786" Name="Restart" ObjectPath="\Events\Default Work Unit\Restart"/>
-				<Event Id="3579758495" Name="State_down" ObjectPath="\Events\Default Work Unit\State_down" MaxAttenuation="0.000000"/>
-				<Event Id="489003304" Name="State_Up" ObjectPath="\Events\Default Work Unit\State_Up" MaxAttenuation="0.000000"/>
-				<Event Id="4246082463" Name="ToState0" ObjectPath="\Events\Default Work Unit\ToState0" MaxAttenuation="0.000000"/>
-				<Event Id="4246082462" Name="ToState1" ObjectPath="\Events\Default Work Unit\ToState1" MaxAttenuation="0.000000"/>
-				<Event Id="4246082461" Name="ToState2" ObjectPath="\Events\Default Work Unit\ToState2" MaxAttenuation="0.000000"/>
-				<Event Id="4246082460" Name="ToState3" ObjectPath="\Events\Default Work Unit\ToState3" MaxAttenuation="0.000000"/>
-				<Event Id="4246082459" Name="ToState4" ObjectPath="\Events\Default Work Unit\ToState4" MaxAttenuation="0.000000"/>
-				<Event Id="2716678721" Name="Victory" ObjectPath="\Events\Default Work Unit\Victory" MaxAttenuation="0.000000"/>
+				<Event Id="775889684" Name="Game_over_too_fast" ObjectPath="\Events\Default Work Unit\Music_states\Game_over_too_fast"/>
+				<Event Id="957044181" Name="Game_over_too_slow" ObjectPath="\Events\Default Work Unit\Music_states\Game_over_too_slow"/>
+				<Event Id="3725903807" Name="Music_start" ObjectPath="\Events\Default Work Unit\Music events\Music_start"/>
+				<Event Id="1203400786" Name="Restart" ObjectPath="\Events\Default Work Unit\Music events\Restart"/>
+				<Event Id="3579758495" Name="State_down" ObjectPath="\Events\Default Work Unit\Music events\State_down"/>
+				<Event Id="489003304" Name="State_Up" ObjectPath="\Events\Default Work Unit\Music events\State_Up"/>
+				<Event Id="1890578599" Name="switchlane" ObjectPath="\Events\Default Work Unit\Player\switchlane"/>
+				<Event Id="4246082463" Name="ToState0" ObjectPath="\Events\Default Work Unit\Music_states\ToState0" MaxAttenuation="0.000000"/>
+				<Event Id="4246082462" Name="ToState1" ObjectPath="\Events\Default Work Unit\Music_states\ToState1" MaxAttenuation="0.000000"/>
+				<Event Id="4246082461" Name="ToState2" ObjectPath="\Events\Default Work Unit\Music_states\ToState2" MaxAttenuation="0.000000"/>
+				<Event Id="4246082460" Name="ToState3" ObjectPath="\Events\Default Work Unit\Music_states\ToState3" MaxAttenuation="0.000000"/>
+				<Event Id="4246082459" Name="ToState4" ObjectPath="\Events\Default Work Unit\Music_states\ToState4" MaxAttenuation="0.000000"/>
+				<Event Id="209243740" Name="ToVictory" ObjectPath="\Events\Default Work Unit\Music_states\ToVictory" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="1706520" Language="SFX">
+					<ShortName>Powerup2.wav</ShortName>
+					<Path>SFX\Powerup2_17B75EF5.wem</Path>
+				</File>
+				<File Id="78283646" Language="SFX">
+					<ShortName>Powerup3.wav</ShortName>
+					<Path>SFX\Powerup3_9E69E797.wem</Path>
+				</File>
 				<File Id="115080511" Language="SFX">
 					<ShortName>Basse_transition_2_mesures_160BPM.wav</ShortName>
 					<Path>SFX\Basse_transition_2_mesures_160BPM_4B8CC0C5.wem</Path>
@@ -42,6 +51,10 @@
 				<File Id="127244324" Language="SFX">
 					<ShortName>State_2\Basse_stage_1_16mesures_160BPM.wav</ShortName>
 					<Path>SFX\State_2\Basse_stage_1_16mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="152217267" Language="SFX">
+					<ShortName>Powerdown4.wav</ShortName>
+					<Path>SFX\Powerdown4_9E69E797.wem</Path>
 				</File>
 				<File Id="159727642" Language="SFX">
 					<ShortName>Eddy_wow.wav</ShortName>
@@ -55,9 +68,17 @@
 					<ShortName>Lead_stage_1_16mesures_160BPM.wav</ShortName>
 					<Path>SFX\Lead_stage_1_16mesures_160BPM_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="266514762" Language="SFX">
+					<ShortName>Powerdown1.wav</ShortName>
+					<Path>SFX\Powerdown1_9E69E797.wem</Path>
+				</File>
 				<File Id="284547349" Language="SFX">
 					<ShortName>Too_slow.wav</ShortName>
 					<Path>SFX\Too_slow_9E69E797.wem</Path>
+				</File>
+				<File Id="308951651" Language="SFX">
+					<ShortName>Powerdown2.wav</ShortName>
+					<Path>SFX\Powerdown2_9E69E797.wem</Path>
 				</File>
 				<File Id="451011026" Language="SFX">
 					<ShortName>batterie_stage_2_16mesures_160BPM.wav</ShortName>
@@ -67,9 +88,17 @@
 					<ShortName>Basse_transition_descente_2_mesures_160BPM.wav</ShortName>
 					<Path>SFX\Basse_transition_descente_2_mesures_160BPM_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="508661593" Language="SFX">
+					<ShortName>Powerup4.wav</ShortName>
+					<Path>SFX\Powerup4_9E69E797.wem</Path>
+				</File>
 				<File Id="522735093" Language="SFX">
 					<ShortName>batterie_stage_1_16mesures_160BPM.wav</ShortName>
 					<Path>SFX\batterie_stage_1_16mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="546290330" Language="SFX">
+					<ShortName>Déplacement_1.wav</ShortName>
+					<Path>SFX\Déplacement_1_9E69E797.wem</Path>
 				</File>
 				<File Id="606101183" Language="SFX">
 					<ShortName>Basse_stage_1_16mesures_160BPM.wav</ShortName>
@@ -90,6 +119,14 @@
 				<File Id="758779315" Language="SFX">
 					<ShortName>Lead_transition_descente_2_mesures_160BPM.wav</ShortName>
 					<Path>SFX\Lead_transition_descente_2_mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="792656206" Language="SFX">
+					<ShortName>Powerdown3.wav</ShortName>
+					<Path>SFX\Powerdown3_9E69E797.wem</Path>
+				</File>
+				<File Id="857495145" Language="SFX">
+					<ShortName>Powerup1.wav</ShortName>
+					<Path>SFX\Powerup1_9E69E797.wem</Path>
 				</File>
 				<File Id="875802478" Language="SFX">
 					<ShortName>basse_stage_2_16mesures_160BPM.wav</ShortName>

@@ -19,12 +19,13 @@ namespace AK
         static const AkUniqueID RESTART = 1203400786U;
         static const AkUniqueID STATE_DOWN = 3579758495U;
         static const AkUniqueID STATE_UP = 489003304U;
+        static const AkUniqueID SWITCHLANE = 1890578599U;
         static const AkUniqueID TOSTATE0 = 4246082463U;
         static const AkUniqueID TOSTATE1 = 4246082462U;
         static const AkUniqueID TOSTATE2 = 4246082461U;
         static const AkUniqueID TOSTATE3 = 4246082460U;
         static const AkUniqueID TOSTATE4 = 4246082459U;
-        static const AkUniqueID VICTORY = 2716678721U;
+        static const AkUniqueID TOVICTORY = 209243740U;
     } // namespace EVENTS
 
     namespace STATES
@@ -52,6 +53,7 @@ namespace AK
                 static const AkUniqueID STATE_2 = 1277114383U;
                 static const AkUniqueID STATE_3 = 1277114382U;
                 static const AkUniqueID STATE_4 = 1277114377U;
+                static const AkUniqueID WIN = 979765101U;
             } // namespace STATE
         } // namespace STATE_JUICYINESS
 

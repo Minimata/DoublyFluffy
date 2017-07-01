@@ -118,7 +118,7 @@ public class GameController : MonoBehaviour {
 		nextLevel = _nextLevel;
 		VictoryText.enabled = true;
 		NextLevelText.enabled = true;
-        AkSoundEngine.PostEvent("Victory", gameObject);
+        AkSoundEngine.PostEvent("ToVictory", gameObject);
         Debug.Log("Victory !");
 	}
 
