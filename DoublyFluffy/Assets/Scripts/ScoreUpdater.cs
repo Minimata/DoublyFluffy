@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,7 +19,7 @@ public class ScoreUpdater : MonoBehaviour, IRestartable
 	void Update ()
 	{
 	    time += Time.deltaTime;
-	    score.text = "Score \r " + time;
+		score.text = "Score \r " + Math.Round(time, 3);
 	}
 
     void IRestartable.Restart(GameController controller)

@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour, IRestartable {
     private JuicinessController juicy;
 
     private int juiceIncrement;
+	private bool levelEnded = false;
 
     // Use this for initialization
     void Start ()
@@ -46,13 +47,14 @@ public class PlayerController : MonoBehaviour, IRestartable {
 		rb2d.transform.position = Vector3.Lerp(rb2d.transform.position, new Vector3(newXPosition, rb2d.transform.position.y, transform.position.z), horizontalSpeed * Time.deltaTime);
 
         //Juice control
-	    juicy.juice += juiceIncrement;
+		if(!levelEnded)
+	    	juicy.juice += juiceIncrement;
 	}
 
     void OnTriggerStay2D(Collider2D other)
     {
        if (other.tag == "LaneBlue") juiceIncrement = -1;
-       else if (other.tag == "LaneYellow") juiceIncrement = 20;
+       else if (other.tag == "LaneYellow") juiceIncrement = 5;
     }
 
     void IRestartable.Restart(GameController controller)
@@ -63,6 +65,6 @@ public class PlayerController : MonoBehaviour, IRestartable {
 
     void IRestartable.Stop(GameController controller)
     {
-
+		levelEnded = true;
     }
 }
