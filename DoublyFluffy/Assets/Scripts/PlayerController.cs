@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown ("right")) {
             Debug.Log(positionOnLane);
-			if (positionOnLane < GameController.instance.nbLane-1) 
+			if (positionOnLane < GameController.instance.nbLanes-1) 
 				positionOnLane++;
 		} else if (Input.GetKeyDown ("left")) {
 			if (positionOnLane > 0) 

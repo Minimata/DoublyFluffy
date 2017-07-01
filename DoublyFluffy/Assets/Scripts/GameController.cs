@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour {
 	public static GameController instance;
 	[HideInInspector] public float sizeOfLane;
     [HideInInspector] public float leftPosition;
-	public int nbLane = 5;
+	public int nbLanes; 
 
     public GameObject ground;
 
@@ -22,9 +22,10 @@ public class GameController : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Start () {
-		float xMax = ground.GetComponent<GroundController>().nbLanes;
-		leftPosition = -xMax;
-		sizeOfLane = (xMax*2)/nbLane;
+		nbLanes = ground.GetComponent<GroundController> ().nbLanes;
+		float xMax = ground.GetComponent<GroundController> ().nbLanes;
+		leftPosition = -(xMax/2);
+		sizeOfLane = xMax/ground.GetComponent<GroundController>().nbLanes;
 	}
 
 	
