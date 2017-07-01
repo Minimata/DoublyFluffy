@@ -84,6 +84,7 @@ public class GameController : MonoBehaviour {
 
     void Restart()
     {
+        //AkSoundEngine.PostEvent("Restart", null);
         Time.timeScale = 1;
 		nextLevel = -1;
         PlayableUI();

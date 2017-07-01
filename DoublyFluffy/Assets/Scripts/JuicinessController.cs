@@ -13,8 +13,6 @@ public class JuicinessController : MonoBehaviour, IRestartable
     [SerializeField] private int defaultJuice = 100;
     [SerializeField] private int nbStates = 10;
 
-    public GameObject music;
-
     // Use this for initialization
     void Start ()
     {
@@ -25,10 +23,6 @@ public class JuicinessController : MonoBehaviour, IRestartable
 	// Update is called once per frame
 	void Update ()
 	{
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            AkSoundEngine.PostEvent("Restart", null);
-        }
         int stateWidth = maxJuice / nbStates;
 	    currentState = juice / stateWidth;
 
@@ -54,7 +48,7 @@ public class JuicinessController : MonoBehaviour, IRestartable
                 AkSoundEngine.PostEvent("ToState0", null);
                 break;
             case 1:
-                //AkSoundEngine.PostEvent("ToState1", null);
+                AkSoundEngine.PostEvent("ToState1", null);
                 break;
             case 2:
                 AkSoundEngine.PostEvent("ToState2", null);
@@ -74,6 +68,14 @@ public class JuicinessController : MonoBehaviour, IRestartable
 
     void IRestartable.Restart(GameController controller)
     {
+        /*
+        AkSoundEngine.PostEvent("State_Up", null);
+        AkSoundEngine.PostEvent("State_down", null);
+        AkSoundEngine.PostEvent("Game_over_too_fast", null);
+        AkSoundEngine.PostEvent("Game_over_too_slow", null);
+        AkSoundEngine.PostEvent("Restart", null);
+        */
+        
         juice = defaultJuice;
     }
 
