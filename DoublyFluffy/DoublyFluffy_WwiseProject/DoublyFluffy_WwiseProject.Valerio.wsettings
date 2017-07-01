@@ -19,7 +19,7 @@
 				<Property Name="General\LatestLanguage" Type="int32" Value="12"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="k+xT+Pzkz0yEv7I+B//gjgHcVAv/////yWoebPvCC0Cxrr57cm5T9AHcVAv/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="ch2SwGRf/UuHCXWj3dByFAHwChf/////c0xurtjWgEWKJeJj2CQCWwHwChf/////"/>
 				<Property Name="Interactive Music\x64_{02DE65D1-09A9-4430-BDF7-849AC775CBDC} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAgGxAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{0E3947F3-DF30-4091-A815-BA5305A3A4A4} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAAENAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{2312EC8F-055C-452B-8B98-234EE30A632B} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAAENAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>

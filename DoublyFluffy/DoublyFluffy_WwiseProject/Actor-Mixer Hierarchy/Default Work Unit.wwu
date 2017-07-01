@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}" SchemaVersion="75">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Sons_memes" ID="{5C845082-86FF-48FA-BE3E-DC27361B1D69}" ShortID="407432265">
+					<ChildrenList>
+						<Sound Name="Eddy_wow" ID="{11CF7DB3-5D80-49F0-BE6D-90ADF60BE5C9}" ShortID="859475186" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Eddy_wow" ID="{6973C30E-AD96-4B8A-8B6B-51B96300E9F0}" ShortID="988032207">
+									<Language>SFX</Language>
+									<AudioFile>Eddy_wow.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Eddy_wow" ID="{6973C30E-AD96-4B8A-8B6B-51B96300E9F0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
