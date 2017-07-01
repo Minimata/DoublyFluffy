@@ -59,7 +59,11 @@ public class GameController : MonoBehaviour {
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R)) Restart();
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            AkSoundEngine.PostEvent("Restart", null);
+            Restart();
+        }
         if (Input.GetKeyDown(KeyCode.Q)) Application.Quit();
 		if (Input.GetKeyDown (KeyCode.Space) && nextLevel > 0) {
 			SceneManager.LoadScene (nextLevel);
@@ -105,18 +109,21 @@ public class GameController : MonoBehaviour {
 		nextLevel = _nextLevel;
 		VictoryText.enabled = true;
 		NextLevelText.enabled = true;
-		Debug.Log("Victory !");
+        AkSoundEngine.PostEvent("Victory", null);
+        Debug.Log("Victory !");
 	}
 
 	public void DefeatLow()
 	{
 	    DefeatLowText.enabled = true;
-		Debug.Log("You're going too slow !");
+        AkSoundEngine.PostEvent("Game_over_too_slow", null);
+        Debug.Log("You're going too slow !");
 	}
 
     public void DefeatHigh()
     {
         DefeatHighText.enabled = true;
+        AkSoundEngine.PostEvent("Game_over_too_fast", null);
         Debug.Log("YOUR EPICNESS EXPLODED THE HYPERBEAM-MOTORISED SPACESHIP !!!");
     }
     

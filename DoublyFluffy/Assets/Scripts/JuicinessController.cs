@@ -7,6 +7,7 @@ public class JuicinessController : MonoBehaviour, IRestartable
 
     [HideInInspector] public int juice;
     [HideInInspector] public int currentState;
+    private int oldState;
 
     public int maxJuice = 1000;
     [SerializeField] private int defaultJuice = 100;
@@ -18,6 +19,7 @@ public class JuicinessController : MonoBehaviour, IRestartable
     void Start ()
     {
         juice = defaultJuice;
+        oldState = currentState = 1;
     }
 	
 	// Update is called once per frame
@@ -39,6 +41,9 @@ public class JuicinessController : MonoBehaviour, IRestartable
 			GameController.instance.DefeatHigh();
 	    }
 
+	    if (oldState < currentState) AkSoundEngine.PostEvent("State_down", null);
+        else if (oldState > currentState) AkSoundEngine.PostEvent("State_Up", null);
+
 	    switch (currentState)
         {
             case 0:
@@ -59,7 +64,9 @@ public class JuicinessController : MonoBehaviour, IRestartable
 
         }
 
-    }
+	    oldState = currentState;
+
+	}
 
     void IRestartable.Restart(GameController controller)
     {
