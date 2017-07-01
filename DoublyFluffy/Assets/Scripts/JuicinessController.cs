@@ -25,7 +25,11 @@ public class JuicinessController : MonoBehaviour, IRestartable
 	// Update is called once per frame
 	void Update ()
 	{
-	    int stateWidth = maxJuice / nbStates;
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            AkSoundEngine.PostEvent("Restart", null);
+        }
+        int stateWidth = maxJuice / nbStates;
 	    currentState = juice / stateWidth;
 
 	    if (juice < 0)
@@ -41,8 +45,8 @@ public class JuicinessController : MonoBehaviour, IRestartable
 			GameController.instance.DefeatHigh();
 	    }
 
-	    if (oldState < currentState) AkSoundEngine.PostEvent("State_down", null);
-        else if (oldState > currentState) AkSoundEngine.PostEvent("State_Up", null);
+	    //if (oldState < currentState) AkSoundEngine.PostEvent("State_down", null);
+        //else if (oldState > currentState) AkSoundEngine.PostEvent("State_Up", null);
 
 	    switch (currentState)
         {
@@ -50,7 +54,7 @@ public class JuicinessController : MonoBehaviour, IRestartable
                 AkSoundEngine.PostEvent("ToState0", null);
                 break;
             case 1:
-                AkSoundEngine.PostEvent("ToState1", null);
+                //AkSoundEngine.PostEvent("ToState1", null);
                 break;
             case 2:
                 AkSoundEngine.PostEvent("ToState2", null);
