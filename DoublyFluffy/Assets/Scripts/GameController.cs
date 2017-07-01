@@ -10,6 +10,8 @@ public class GameController : MonoBehaviour {
 	[HideInInspector] public float sizeOfLane;
     [HideInInspector] public float leftPosition;
 	public int nbLanes;
+
+	private int nextLevel = -1;
     
     public GameObject ground;
     private GroundController gnd;
@@ -23,6 +25,8 @@ public class GameController : MonoBehaviour {
     public Text GameOverText;
     public Text DefeatLowText;
     public Text DefeatHighText;
+	public Text NextLevelText;
+	public Text LevelText;
 
     void Awake(){
 		if (instance == null) {
@@ -57,6 +61,12 @@ public class GameController : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.R)) Restart();
         if (Input.GetKeyDown(KeyCode.Q)) Application.Quit();
+		if (Input.GetKeyDown (KeyCode.Space) && nextLevel > 0) {
+			SceneManager.LoadScene (nextLevel);
+			Time.timeScale = 1;
+			nextLevel = -1;
+		}
+
     }
 
     void PlayableUI()
@@ -65,6 +75,8 @@ public class GameController : MonoBehaviour {
         GameOverText.enabled = false;
         DefeatLowText.enabled = false;
         DefeatHighText.enabled = false;
+		NextLevelText.enabled = false;
+		LevelText.text = "Level : " + (SceneManager.GetActiveScene ().buildIndex + 1);
     }
 
     void Restart()
@@ -88,9 +100,11 @@ public class GameController : MonoBehaviour {
         }
     }
 
-	public void Victory()
+	public void Victory(int _nextLevel)
 	{
-	    VictoryText.enabled = true;
+		nextLevel = _nextLevel;
+		VictoryText.enabled = true;
+		NextLevelText.enabled = true;
 		Debug.Log("Victory !");
 	}
 
