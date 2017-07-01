@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour, IRestartable {
 	[SerializeField] private int positionOnLane = 0;
     [SerializeField] private int defaultPositionOnLane = 2;
 
+    [SerializeField] private int defaultYellowIncrement = 1;
+    [SerializeField] private int defaultBlueIncrement = -1;
+
     public float horizontalSpeed = 10f;
 
     public GameObject juiciness;
@@ -51,8 +54,8 @@ public class PlayerController : MonoBehaviour, IRestartable {
 
     void OnTriggerStay2D(Collider2D other)
     {
-       if (other.tag == "LaneBlue") juiceIncrement = -1;
-       else if (other.tag == "LaneYellow") juiceIncrement = 20;
+       if (other.tag == "LaneBlue") juiceIncrement = defaultBlueIncrement;
+       else if (other.tag == "LaneYellow") juiceIncrement = defaultYellowIncrement;
     }
 
     void IRestartable.Restart(GameController controller)
