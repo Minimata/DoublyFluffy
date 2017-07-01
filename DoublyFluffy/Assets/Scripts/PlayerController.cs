@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour {
 	    juicy.juice += juiceIncrement;
 	}
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
        if (other.tag == "LaneBlue") juiceIncrement = -1;
        else if (other.tag == "LaneYellow") juiceIncrement = 1;
