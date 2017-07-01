@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundController : MonoBehaviour
+public class GroundController : MonoBehaviour, IRestartable
 {
 
     [SerializeField] private float speed = 1.0f;
@@ -24,4 +24,10 @@ public class GroundController : MonoBehaviour
         Vector3 move = Vector3.down * speed * juicy.juice / juicy.maxJuice;
 	    transform.position += move;
 	}
+
+    void IRestartable.Restart(GameController controller)
+    {
+        Debug.Log("Restart from GroundController");
+        transform.position = new Vector3(0, 10, 0);
+    }
 }

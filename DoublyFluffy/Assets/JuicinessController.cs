@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JuicinessController : MonoBehaviour
+public class JuicinessController : MonoBehaviour, IRestartable
 {
 
     [HideInInspector] public int juice;
@@ -36,4 +36,10 @@ public class JuicinessController : MonoBehaviour
 	        juice = maxJuice;
 	    }
 	}
+
+    void IRestartable.Restart(GameController controller)
+    {
+        Debug.Log("Restart from JuicinessController");
+        juice = defaultJuice;
+    }
 }

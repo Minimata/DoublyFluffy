@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour, IRestartable {
 
 	private Rigidbody2D rb2d;
 	[SerializeField] private int positionOnLane = 0;
+    [SerializeField] private int defaultPositionOnLane = 2;
 
-	public float horizontalSpeed = 10f;
+    public float horizontalSpeed = 10f;
 
     public GameObject juiciness;
     private JuicinessController juicy;
@@ -45,5 +46,12 @@ public class PlayerController : MonoBehaviour {
     {
         if (other.tag == "LaneBlue") juiceIncrement = -1;
         else if (other.tag == "LaneYellow") juiceIncrement = 1;
+    }
+
+    void IRestartable.Restart(GameController controller)
+    {
+        Debug.Log("Restart from PlayerController");
+        positionOnLane = defaultPositionOnLane;
+        juiceIncrement = 0;
     }
 }
