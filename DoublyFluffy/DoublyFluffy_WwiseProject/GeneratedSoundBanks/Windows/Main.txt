@@ -2,6 +2,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	489003304	State_Up			\Default Work Unit\State_Up	
 	775889684	Game_over_too_fast			\Default Work Unit\Game_over_too_fast	
 	957044181	Game_over_too_slow			\Default Work Unit\Game_over_too_slow	
+	1203400786	Restart			\Default Work Unit\Restart	
+	2716678721	Victory			\Default Work Unit\Victory	
 	3579758495	State_down			\Default Work Unit\State_down	
 	3725903807	Music_start			\Default Work Unit\Music_start	
 	4246082459	ToState4			\Default Work Unit\ToState4	
@@ -30,6 +32,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	115080511	Basse_transition_2_mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Basse_transition_2_mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\Transition\Basse_transition_2_mesures_160BPM		576064
 	127244324	Basse_stage_1_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\State_2\Basse_stage_1_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_2\State 2\Basse_stage_1_16mesures_160BPM		4608064
 	159727642	Eddy_wow	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Eddy_wow_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\Transition\Eddy_wow		213328
+	168054633	Bomberman victory theme	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Bomberman victory theme_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bomberman victory theme		1392704
+	245027827	Daft Punk One More Time Vocal Effect	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Daft Punk One More Time Vocal Effect_C32FE150.wem		\Actor-Mixer Hierarchy\Default Work Unit\Daft Punk One More Time Vocal Effect		438484
 	246611107	Lead_stage_1_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Lead_stage_1_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_3\State 3\Lead_stage_1_16mesures_160BPM		4608064
 	284547349	Too_slow	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Too_slow_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_game_over\Too_slow		96064
 	413958571	Stage Down	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Stage Down_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_state_updown\Stage Down		396064

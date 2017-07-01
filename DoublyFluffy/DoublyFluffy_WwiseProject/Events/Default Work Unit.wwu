@@ -23,6 +23,12 @@
 								</Element>
 							</ElementList>
 						</Action>
+						<Action Name="Set State" ID="{01BD530A-105D-42A3-9C68-8603F5D49CD4}" ShortID="201644758" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="Player_life" ID="{3843A132-A87A-4D3D-90F6-D854532A95CE}"/>
+								<GroupItem Name="Dead_fast" ID="{120F8827-ECAF-4510-A68F-6E220DB40408}"/>
+							</SetItemParam>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Game_over_too_slow" ID="{077C244A-1C44-44D8-9197-998A44D0CD48}">
@@ -111,6 +117,12 @@
 								</Element>
 							</ElementList>
 						</Action>
+						<Action Name="Set State" ID="{FDB9D5FE-424D-4981-B7E6-299FFF0F2834}" ShortID="762166954" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="Player_life" ID="{3843A132-A87A-4D3D-90F6-D854532A95CE}"/>
+								<GroupItem Name="Dead_slow" ID="{128E9280-9CF4-4AF9-82D3-B1B9A4A2739E}"/>
+							</SetItemParam>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="State_Up" ID="{755725FB-2885-4F6B-8C67-B54F86260552}">
@@ -182,6 +194,34 @@
 								<Group Name="State_juicyiness" ID="{462CAEC9-1598-40E1-9187-FB95B93BFDCC}"/>
 								<GroupItem Name="State_0" ID="{C9F56461-FDBD-4598-A4D1-EA82F7A0AF36}"/>
 							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Victory" ID="{17309A51-0621-4E45-B6D4-90F828E29C8B}">
+					<ChildrenList>
+						<Action Name="Set State" ID="{47BBE334-29CD-4400-9C77-1AEDA7806F8D}" ShortID="52376121" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="State_juicyiness" ID="{462CAEC9-1598-40E1-9187-FB95B93BFDCC}"/>
+								<GroupItem Name="None" ID="{9A3097DC-7365-4643-8DEF-3DB5DF8EEE63}"/>
+							</SetItemParam>
+						</Action>
+						<Action Name="Play" ID="{A3AAA421-07E4-46DD-B6FD-98F3FEEBADD1}" ShortID="792283569" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1291ED69-041D-49D8-BC1D-A86A95490443}" Global="false">
+									<ObjectRef Name="Bomberman victory theme" ID="{EA2F0FE4-5539-4F99-A0BB-F8610ABF2619}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Restart" ID="{A90DC759-A2AE-4273-8F2D-CD746A664F99}">
+					<ChildrenList>
+						<Action Name="Play" ID="{82384BD3-E587-45C6-A90C-56B84A94B84C}" ShortID="960636592" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{FE772BD4-1682-470F-B18D-970061521132}" Global="false">
+									<ObjectRef Name="Daft Punk One More Time Vocal Effect" ID="{E90EF879-0362-42BE-B00D-35582767DA48}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
+								</Element>
+							</ElementList>
 						</Action>
 					</ChildrenList>
 				</Event>

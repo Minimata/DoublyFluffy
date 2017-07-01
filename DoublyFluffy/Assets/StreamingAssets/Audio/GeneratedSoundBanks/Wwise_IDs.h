@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID GAME_OVER_TOO_FAST = 775889684U;
         static const AkUniqueID GAME_OVER_TOO_SLOW = 957044181U;
         static const AkUniqueID MUSIC_START = 3725903807U;
+        static const AkUniqueID RESTART = 1203400786U;
         static const AkUniqueID STATE_DOWN = 3579758495U;
         static const AkUniqueID STATE_UP = 489003304U;
         static const AkUniqueID TOSTATE0 = 4246082463U;
@@ -23,6 +24,7 @@ namespace AK
         static const AkUniqueID TOSTATE2 = 4246082461U;
         static const AkUniqueID TOSTATE3 = 4246082460U;
         static const AkUniqueID TOSTATE4 = 4246082459U;
+        static const AkUniqueID VICTORY = 2716678721U;
     } // namespace EVENTS
 
     namespace STATES
