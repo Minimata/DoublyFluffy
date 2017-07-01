@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
 
 	private Rigidbody2D rb2d;
 	private int positionOnLane = 0;
@@ -17,6 +17,7 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown ("right")) {
+            Debug.Log("BOnjour");
 			if (positionOnLane < GameController.instance.nbLane-1) 
 				positionOnLane++;
 		} else if (Input.GetKeyDown ("left")) {

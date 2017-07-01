@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour {
 
 	public static GameController instance;
-	public float sizeOfLane;
-	public float leftPosition;
-	public int nbLane = 5; 
+	[HideInInspector] public float sizeOfLane;
+    [HideInInspector] public float leftPosition;
+	public int nbLane = 5;
+
+    public GameObject ground;
 
 	void Awake(){
 		if (instance == null) {
