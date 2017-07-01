@@ -6,10 +6,17 @@
 				<SoundBank Name="Main" ID="{FA34D78E-ABFB-4E23-9322-EC6D7FB9664F}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Music_start" ID="{9F624FEC-255D-40B8-BC65-E55F1C49651A}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Restart" ID="{A90DC759-A2AE-4273-8F2D-CD746A664F99}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Game_over_too_fast" ID="{BCDF6C84-88B3-431E-B304-68E138A56B9A}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ToState1" ID="{88D4DECA-CDD6-432B-A17F-A3F5D8D7EB4C}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ToState4" ID="{02A5B76A-8FAA-446A-B06A-A701F49A501E}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Game_over_too_slow" ID="{077C244A-1C44-44D8-9197-998A44D0CD48}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ToState2" ID="{9F72BD47-DF1D-454E-BF94-6B43919C6D17}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ToState0" ID="{F88ADFF4-9A38-4A9E-811C-2DA442B25474}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="State_down" ID="{307D701E-4880-4BCF-9DAE-28094D5977A7}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Victory" ID="{17309A51-0621-4E45-B6D4-90F828E29C8B}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="State_Up" ID="{755725FB-2885-4F6B-8C67-B54F86260552}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ToState3" ID="{48F3F848-D4B0-4FBB-8297-B14327BC52FD}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

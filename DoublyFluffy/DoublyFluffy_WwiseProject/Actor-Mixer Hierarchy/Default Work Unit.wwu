@@ -124,6 +124,56 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="Bomberman victory theme" ID="{EA2F0FE4-5539-4F99-A0BB-F8610ABF2619}" ShortID="140728183" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Bomberman victory theme" ID="{EE93131B-67EB-4B39-B1C6-3DFD8D01EF2F}" ShortID="168054633">
+							<Language>SFX</Language>
+							<AudioFile>Bomberman victory theme.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Bomberman victory theme" ID="{EE93131B-67EB-4B39-B1C6-3DFD8D01EF2F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Daft Punk One More Time Vocal Effect" ID="{E90EF879-0362-42BE-B00D-35582767DA48}" ShortID="628184852" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>700</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Daft Punk One More Time Vocal Effect" ID="{3A743EE8-DC37-4235-8A73-F1EEFC3755E5}" ShortID="245027827">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="10.0981924198251"/>
+								<Property Name="TrimEnd" Type="Real64" Value="12.583556851312"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Daft Punk One More Time Vocal Effect.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Daft Punk One More Time Vocal Effect" ID="{3A743EE8-DC37-4235-8A73-F1EEFC3755E5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

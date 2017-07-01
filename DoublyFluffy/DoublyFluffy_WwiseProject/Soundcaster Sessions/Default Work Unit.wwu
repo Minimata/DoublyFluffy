@@ -25,11 +25,39 @@
 							<ObjectRef Name="Music_start" ID="{9F624FEC-255D-40B8-BC65-E55F1C49651A}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}"/>
 							<Position X="2" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="ToState0" ID="{F88ADFF4-9A38-4A9E-811C-2DA442B25474}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ToState1" ID="{88D4DECA-CDD6-432B-A17F-A3F5D8D7EB4C}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ToState2" ID="{9F72BD47-DF1D-454E-BF94-6B43919C6D17}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ToState3" ID="{48F3F848-D4B0-4FBB-8297-B14327BC52FD}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ToState4" ID="{02A5B76A-8FAA-446A-B06A-A701F49A501E}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Victory" ID="{17309A51-0621-4E45-B6D4-90F828E29C8B}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Restart" ID="{A90DC759-A2AE-4273-8F2D-CD746A664F99}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}"/>
+							<Position X="4" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="State_0" ID="{C9F56461-FDBD-4598-A4D1-EA82F7A0AF36}"/>
-						<CurrentStateRef Name="Dead_fast" ID="{120F8827-ECAF-4510-A68F-6E220DB40408}"/>
+						<CurrentStateRef Name="State_3" ID="{8CF6AE98-6839-4EE6-B266-BF5EC45C2117}"/>
+						<CurrentStateRef Name="Alive" ID="{D545BAF4-88E3-44E1-89E5-FFAC84C50B6A}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
