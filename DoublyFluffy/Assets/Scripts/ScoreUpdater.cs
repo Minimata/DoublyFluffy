@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class ScoreUpdater : MonoBehaviour, IRestartable
 {
     private Text score;
+	private Text bestScore;
     private float time;
 	// Use this for initialization
 	void Start ()
@@ -30,13 +31,15 @@ public class ScoreUpdater : MonoBehaviour, IRestartable
     void IRestartable.Stop(GameController controller)
     {
 		StopCoroutine (RunTimer ());
+		print (PlayerPrefs.GetFloat ("BestScore"));
+		if(!PlayerPrefs.HasKey ("BestScore") || PlayerPrefs.GetFloat("BestScore") > Math.Round(time*10f, 3) )
+			PlayerPrefs.SetFloat ("BestScore", (float) Math.Round(time*10f, 3));
     }
 
 	private IEnumerator RunTimer(){
 		while (true) {
 			yield return new WaitForSeconds(0.001f);
 			time += 0.001f;
-			print ("Time" + time);
 			score.text = "Score \r " + Math.Round(time*10f, 3);
 		}
 	}
