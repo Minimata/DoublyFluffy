@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody2D rb2d;
 	[SerializeField] private int positionOnLane = 0;
 
-	public float speed = 10f;
+	public float horizontalSpeed = 10f;
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown ("right")) {
-            Debug.Log(positionOnLane);
 			if (positionOnLane < GameController.instance.nbLanes-1) 
 				positionOnLane++;
 		} else if (Input.GetKeyDown ("left")) {
@@ -27,7 +26,7 @@ public class PlayerController : MonoBehaviour {
 		float sizeOfLane = GameController.instance.sizeOfLane;
 		float offset = (sizeOfLane / 2f);
 		float newXPosition = GameController.instance.leftPosition + (sizeOfLane * (positionOnLane + 1) - offset);
-		rb2d.transform.position = Vector3.Lerp(rb2d.transform.position, new Vector3(newXPosition, rb2d.transform.position.y, transform.position.z), speed * Time.deltaTime);
+		rb2d.transform.position = Vector3.Lerp(rb2d.transform.position, new Vector3(newXPosition, rb2d.transform.position.y, transform.position.z), horizontalSpeed * Time.deltaTime);
 	}
 
     void OnTriggerEnter2D(Collider2D other)

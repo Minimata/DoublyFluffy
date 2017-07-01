@@ -23,9 +23,9 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		nbLanes = ground.GetComponent<GroundController> ().nbLanes;
-		float xMax = ground.GetComponent<GroundController> ().nbLanes;
+		float xMax = nbLanes;
 		leftPosition = -(xMax/2);
-		sizeOfLane = xMax/ground.GetComponent<GroundController>().nbLanes;
+		sizeOfLane = xMax/nbLanes;
 	}
 
 	
