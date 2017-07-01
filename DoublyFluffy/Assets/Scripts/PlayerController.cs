@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour {
 		rb2d.transform.position = Vector3.Lerp(rb2d.transform.position, new Vector3(newXPosition, rb2d.transform.position.y, transform.position.z), horizontalSpeed * Time.deltaTime);
 
         //Juice control
-	    juicy.juicy += juiceIncrement;
+	    juicy.juice += juiceIncrement;
 	}
 
     void OnTriggerEnter2D(Collider2D other)

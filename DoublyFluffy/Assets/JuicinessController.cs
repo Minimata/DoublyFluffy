@@ -5,27 +5,35 @@ using UnityEngine;
 public class JuicinessController : MonoBehaviour
 {
 
-    [HideInInspector] public int juicy;
+    [HideInInspector] public int juice;
     [HideInInspector] public int currentState;
 
+    public int maxJuice = 1000;
     [SerializeField] private int defaultJuice = 100;
-    [SerializeField] private int maxJuice = 1000;
     [SerializeField] private int nbStates = 10;
 
 
     // Use this for initialization
     void Start ()
     {
-        juicy = defaultJuice;
+        juice = defaultJuice;
     }
 	
 	// Update is called once per frame
 	void Update ()
 	{
 	    int stateWidth = maxJuice / nbStates;
-	    currentState = juicy / stateWidth;
+	    currentState = juice / stateWidth;
 
-        if(juicy < 0) Debug.Log("Juice too low.");
-        else if(juicy > maxJuice) Debug.Log("JUICE TOO HIGH OMG !!!");
+	    if (juice < 0)
+	    {
+	        Debug.Log("Juice too low.");
+	        juice = 0;
+	    }
+        else if (juice > maxJuice)
+	    {
+	        Debug.Log("JUICE TOO HIGH OMG !!!");
+	        juice = maxJuice;
+	    }
 	}
 }

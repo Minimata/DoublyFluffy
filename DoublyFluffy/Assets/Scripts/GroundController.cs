@@ -5,7 +5,7 @@ using UnityEngine;
 public class GroundController : MonoBehaviour
 {
 
-    [SerializeField] private float m_speed = 0.01f;
+    [SerializeField] private float speed = 1.0f;
     public int nbLanes = 5;
 
     public GameObject juiciness;
@@ -21,7 +21,7 @@ public class GroundController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-        Vector3 move = Vector3.down * m_speed;
+        Vector3 move = Vector3.down * speed * juicy.juice / juicy.maxJuice;
 	    transform.position += move;
 	}
 }
