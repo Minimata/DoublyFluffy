@@ -12,6 +12,9 @@ public class GameController : MonoBehaviour {
 	public int nbLane = 5;
 
     public GameObject ground;
+    public GameObject juiciness;
+
+    private JuicinessController juicy;
 
 	void Awake(){
 		if (instance == null) {
@@ -21,7 +24,10 @@ public class GameController : MonoBehaviour {
 		}
 	}
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
+	    juicy = juiciness.GetComponent<JuicinessController>();
+
 		float xMax = ground.GetComponent<GroundController>().nbLanes;
 		leftPosition = -xMax;
 		sizeOfLane = (xMax*2)/nbLane;

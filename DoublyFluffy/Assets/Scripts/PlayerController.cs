@@ -9,9 +9,16 @@ public class PlayerController : MonoBehaviour {
 
 	public float speed = 10f;
 
-	// Use this for initialization
-	void Start () {
-		rb2d = GetComponent<Rigidbody2D> ();
+    public GameObject juiciness;
+
+    private JuicinessController juicy;
+
+    // Use this for initialization
+    void Start ()
+    {
+        juicy = juiciness.GetComponent<JuicinessController>();
+
+        rb2d = GetComponent<Rigidbody2D> ();
 	}
 	
 	// Update is called once per frame
@@ -32,7 +39,6 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("On lane");
         if (other.tag == "LaneBlue") Debug.Log("Blue");
         else if (other.tag == "LaneYellow") Debug.Log("Yellow");
     }

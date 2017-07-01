@@ -8,10 +8,16 @@ public class GroundController : MonoBehaviour
     [SerializeField] private float m_speed = 0.01f;
     public int nbLanes = 5;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public GameObject juiciness;
+
+    private JuicinessController juicy;
+
+    // Use this for initialization
+    void Start ()
+    {
+        juicy = juiciness.GetComponent<JuicinessController>();
+
+    }
 	
 	// Update is called once per frame
 	void Update ()
