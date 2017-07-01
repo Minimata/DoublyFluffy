@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{27E50BA4-DFAD-4E79-94F2-B830CA257713}" SchemaVersion="75">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{27E50BA4-DFAD-4E79-94F2-B830CA257713}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{27E50BA4-DFAD-4E79-94F2-B830CA257713}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="State_juicyiness" ID="{462CAEC9-1598-40E1-9187-FB95B93BFDCC}">
+					<ChildrenList>
+						<State Name="None" ID="{9A3097DC-7365-4643-8DEF-3DB5DF8EEE63}"/>
+						<State Name="State_1" ID="{46F92DB8-39CD-48A9-B0A9-22E9CB450462}"/>
+						<State Name="State_2" ID="{C4BA2D2C-A24C-4075-B22F-33C72B0C71AD}"/>
+						<State Name="State_3" ID="{8CF6AE98-6839-4EE6-B266-BF5EC45C2117}"/>
+						<State Name="State_4" ID="{D73E03CA-2667-445F-AE68-D4CC5E9B14A6}"/>
+						<State Name="State_0" ID="{C9F56461-FDBD-4598-A4D1-EA82F7A0AF36}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Player_life" ID="{2F34F918-2E7E-4758-8AA2-CE20E7BB8036}">
+					<ChildrenList>
+						<State Name="None" ID="{590CFE40-91FF-4771-BFBB-C27E4B2C92C7}"/>
+						<State Name="Dead" ID="{985A7157-885C-4120-8BAF-B4D7E977C53F}"/>
+						<State Name="Alive" ID="{79F53018-8E37-4673-9E68-0E92EF9FFEAD}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
