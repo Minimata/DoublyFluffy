@@ -14,22 +14,10 @@ public class JuicinessController : MonoBehaviour, IRestartable
 
     public GameObject music;
 
-    private ToState0 toState0;
-    private ToState1 toState1;
-    private ToState2 toState2;
-    private ToState3 toState3;
-    private ToState4 toState4;
-
     // Use this for initialization
     void Start ()
     {
         juice = defaultJuice;
-
-        toState0 = GetComponent<ToState0>();
-        toState1 = GetComponent<ToState1>();
-        toState2 = GetComponent<ToState2>();
-        toState3 = GetComponent<ToState3>();
-        toState4 = GetComponent<ToState4>();
     }
 	
 	// Update is called once per frame
