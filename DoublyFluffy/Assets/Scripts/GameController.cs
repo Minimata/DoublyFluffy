@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Start () {
-		float xMax = Camera.main.ScreenToWorldPoint (new Vector3 (Screen.width, Screen.height, 0)).x;
+		float xMax = ground.GetComponent<GroundController>().nbLanes;
 		leftPosition = -xMax;
 		sizeOfLane = (xMax*2)/nbLane;
 	}

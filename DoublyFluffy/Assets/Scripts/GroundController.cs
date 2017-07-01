@@ -6,6 +6,7 @@ public class GroundController : MonoBehaviour
 {
 
     [SerializeField] private float m_speed = 0.01f;
+    public int nbLanes = 5;
 
 	// Use this for initialization
 	void Start () {
