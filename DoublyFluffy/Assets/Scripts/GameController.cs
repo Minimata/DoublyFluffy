@@ -27,6 +27,7 @@ public class GameController : MonoBehaviour {
     public Text DefeatHighText;
 	public Text NextLevelText;
 	public Text LevelText;
+	public Image Pointer;
 
     void Awake(){
 		if (instance == null) {
@@ -70,8 +71,14 @@ public class GameController : MonoBehaviour {
 			Restart ();
 		}
 
-    }
 
+
+		//float currRotation = Pointer.transform.rotation.eulerAngles.z;
+		float juicyRotationNormalize = ((juicy.juice/((float) juicy.maxJuice))*180)-90;
+	
+		print (juicyRotationNormalize);
+		Pointer.transform.rotation = Quaternion.Euler (new Vector3(0, 0, -juicyRotationNormalize));
+	}
     void PlayableUI()
     {
         VictoryText.enabled = false;
