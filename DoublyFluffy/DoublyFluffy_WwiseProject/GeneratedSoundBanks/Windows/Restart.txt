@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1203400786	Restart			\Default Work Unit\Restart	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	245027827	Daft Punk One More Time Vocal Effect	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Daft Punk One More Time Vocal Effect_C32FE150.wem		\Actor-Mixer Hierarchy\Default Work Unit\Daft Punk One More Time Vocal Effect		438484
+
