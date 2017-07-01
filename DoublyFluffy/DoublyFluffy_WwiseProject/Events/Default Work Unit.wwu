@@ -135,6 +135,56 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ToState1" ID="{88D4DECA-CDD6-432B-A17F-A3F5D8D7EB4C}">
+					<ChildrenList>
+						<Action Name="Set State" ID="{9A2841D8-FC08-48E7-BD9C-386D61E1019B}" ShortID="792937683" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="State_juicyiness" ID="{462CAEC9-1598-40E1-9187-FB95B93BFDCC}"/>
+								<GroupItem Name="State_1" ID="{46F92DB8-39CD-48A9-B0A9-22E9CB450462}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ToState2" ID="{9F72BD47-DF1D-454E-BF94-6B43919C6D17}">
+					<ChildrenList>
+						<Action Name="Set State" ID="{3051EE6A-C7FF-46CC-8899-203CF0E3BA31}" ShortID="117055707" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="State_juicyiness" ID="{462CAEC9-1598-40E1-9187-FB95B93BFDCC}"/>
+								<GroupItem Name="State_2" ID="{C4BA2D2C-A24C-4075-B22F-33C72B0C71AD}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ToState3" ID="{48F3F848-D4B0-4FBB-8297-B14327BC52FD}">
+					<ChildrenList>
+						<Action Name="Set State" ID="{981D6472-172D-406F-8384-6663FEDDA93A}" ShortID="278264704" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="State_juicyiness" ID="{462CAEC9-1598-40E1-9187-FB95B93BFDCC}"/>
+								<GroupItem Name="State_3" ID="{8CF6AE98-6839-4EE6-B266-BF5EC45C2117}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ToState4" ID="{02A5B76A-8FAA-446A-B06A-A701F49A501E}">
+					<ChildrenList>
+						<Action Name="Set State" ID="{DAA26194-F3EB-450E-ABD8-C9F0C6CD585B}" ShortID="293747537" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="State_juicyiness" ID="{462CAEC9-1598-40E1-9187-FB95B93BFDCC}"/>
+								<GroupItem Name="State_4" ID="{D73E03CA-2667-445F-AE68-D4CC5E9B14A6}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ToState0" ID="{F88ADFF4-9A38-4A9E-811C-2DA442B25474}">
+					<ChildrenList>
+						<Action Name="Set State" ID="{2A221F6C-7A27-44A5-B0C9-B5C021CCEE3C}" ShortID="911616719" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="State_juicyiness" ID="{462CAEC9-1598-40E1-9187-FB95B93BFDCC}"/>
+								<GroupItem Name="State_0" ID="{C9F56461-FDBD-4598-A4D1-EA82F7A0AF36}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

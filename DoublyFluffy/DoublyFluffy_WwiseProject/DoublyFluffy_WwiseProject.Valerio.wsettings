@@ -18,8 +18,8 @@
 				</Property>
 				<Property Name="General\LatestLanguage" Type="int32" Value="0"/>
 				<Property Name="General\LatestPlatform" Type="string" Value=""/>
-				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value=""/>
-				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="DAAAAA=="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="6P08geHpLUqOhiScZ0E774NCXCjgzupMtPxBGV5eco8="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="jtc0+vurI06TIuxtf7lmTw=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="ch2SwGRf/UuHCXWj3dByFAHwChf/////c0xurtjWgEWKJeJj2CQCWwHwChf/////"/>

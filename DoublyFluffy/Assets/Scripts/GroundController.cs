@@ -14,6 +14,7 @@ public class GroundController : MonoBehaviour, IRestartable
     // Use this for initialization
     void Start ()
     {
+		transform.position = new Vector3(0, 10, 0);
         juicy = juiciness.GetComponent<JuicinessController>();
     }
 	

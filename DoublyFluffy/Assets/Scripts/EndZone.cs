@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EndZone : MonoBehaviour {
 
-	public int nextLevel = 1;
+	public int nextLevel = 2;
 
 	private GroundController ground;
 
@@ -15,6 +15,6 @@ public class EndZone : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		ground.speed = 0f;
 		GameController.instance.GameOver ();
-		GameController.instance.Victory();
+		GameController.instance.Victory(nextLevel);
 	}
 }
