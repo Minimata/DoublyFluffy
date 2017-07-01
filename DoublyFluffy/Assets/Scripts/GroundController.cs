@@ -26,7 +26,12 @@ public class GroundController : MonoBehaviour, IRestartable
 
     void IRestartable.Restart(GameController controller)
     {
-        Debug.Log("Restart from GroundController");
+        speed = 1.0f;
         transform.position = new Vector3(0, 10, 0);
+    }
+
+    void IRestartable.Stop(GameController controller)
+    {
+        speed = 0.0f;
     }
 }
