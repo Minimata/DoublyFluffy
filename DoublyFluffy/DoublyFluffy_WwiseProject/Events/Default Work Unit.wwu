@@ -1,6 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" SchemaVersion="75">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{ECA02F49-F6B9-4729-9789-80130763A8DA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Music_start" ID="{9F624FEC-255D-40B8-BC65-E55F1C49651A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B9132C28-8E6A-4BD0-8431-A6513489FD6D}" ShortID="561714204" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{02EB6FFA-9462-4692-8FD5-E147A5EF65DD}" Global="false">
+									<ObjectRef Name="State_juicy_music" ID="{431002E0-EA22-402E-8BB4-FF36180BD112}" WorkUnitID="{7D885A61-6FDD-41A5-892B-AC6A054BF709}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Game_over_too_fast" ID="{BCDF6C84-88B3-431E-B304-68E138A56B9A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{3E066565-E63D-406E-8E01-7623E3945958}" ShortID="244886564" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{EF9B10FF-0606-479A-AE8B-ECE1AEE7135A}" Global="false">
+									<ObjectRef Name="Too_fast_Explosion" ID="{0BC9D159-9664-4F3C-9532-D0D58666BBA1}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Game_over_too_slow" ID="{077C244A-1C44-44D8-9197-998A44D0CD48}">
+					<ChildrenList>
+						<Action Name="Play" ID="{00181FE5-4997-4615-B003-5F8647FB8A5D}" ShortID="619836665" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{4F725299-5057-4BD5-81FE-6FC98A0FEBD7}" Global="false">
+									<ObjectRef Name="Too_slow" ID="{FCAC5048-4536-45F8-9BFF-8FEF55CC46DA}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{21D0B809-A537-4815-8914-0AFE24B628AB}" ShortID="69610328" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{3C2AB4AC-09B9-4175-B334-A02204ACF699}" Global="false">
+									<ObjectRef Name="Too_slow" ID="{FCAC5048-4536-45F8-9BFF-8FEF55CC46DA}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{F4575E61-F883-4B74-AEF0-8815E7914786}" ShortID="386268911" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.4"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.4"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{A5FE06E2-AC39-4E3C-B9A8-48FCF2C6FEA7}" Global="false">
+									<ObjectRef Name="Too_slow" ID="{FCAC5048-4536-45F8-9BFF-8FEF55CC46DA}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{7C0A8BEC-1D78-421F-A144-7EDAEAE87F12}" ShortID="11555965" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.6"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.6"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{69424B98-B854-47D7-A7DE-00239E1D2693}" Global="false">
+									<ObjectRef Name="Too_slow" ID="{FCAC5048-4536-45F8-9BFF-8FEF55CC46DA}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{B62D4220-C7BC-4E71-B675-9D7C983FF4E0}" ShortID="613034674" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.8"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.8"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{21FAFC27-16DD-4476-819A-9DAE2E7379E4}" Global="false">
+									<ObjectRef Name="Too_slow" ID="{FCAC5048-4536-45F8-9BFF-8FEF55CC46DA}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{268F0F40-3321-429E-8344-EB9FA8BE7F3C}" ShortID="447027642" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{CEC2CAF0-B184-40FA-8DFE-3E1BBAD95BAA}" Global="false">
+									<ObjectRef Name="Too_slow" ID="{FCAC5048-4536-45F8-9BFF-8FEF55CC46DA}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{B8D5DA86-6474-4A6A-8F0E-614F19519E53}" ShortID="608047289" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1.2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.2"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{81656562-C0EB-40EF-8CB6-3A7FE49C651D}" Global="false">
+									<ObjectRef Name="Too_slow" ID="{FCAC5048-4536-45F8-9BFF-8FEF55CC46DA}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{10535DFD-D17A-4164-A753-786E566F182F}" ShortID="428437525" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1.4"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.6"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{25F06069-AE46-4766-978C-78D112ECBFA6}" Global="false">
+									<ObjectRef Name="Too_slow" ID="{FCAC5048-4536-45F8-9BFF-8FEF55CC46DA}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="State_Up" ID="{755725FB-2885-4F6B-8C67-B54F86260552}">
+					<ChildrenList>
+						<Action Name="Play" ID="{419DBCC1-3184-4B19-AC3E-75EB531BE54A}" ShortID="437297694" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{60E52AFC-F727-4DA6-ACBE-E5F142DD832E}" Global="false">
+									<ObjectRef Name="Stage Up" ID="{724B7E0E-1447-4F22-BC2B-9E3D1BA82E9B}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="State_down" ID="{307D701E-4880-4BCF-9DAE-28094D5977A7}">
+					<ChildrenList>
+						<Action Name="Play" ID="{7E57AF46-161F-43F1-B16B-0B73DE1FA8E7}" ShortID="906116890" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8940F90B-08C0-485D-94FB-CC9FE5FB6555}" Global="false">
+									<ObjectRef Name="Stage Down" ID="{0B9FF980-688B-44F3-A0EE-DBDAC2BF7E78}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

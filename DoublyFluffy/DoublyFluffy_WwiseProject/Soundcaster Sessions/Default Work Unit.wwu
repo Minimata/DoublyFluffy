@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{59B420AC-958E-4082-BA08-CD5F151795FB}" SchemaVersion="75">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{59B420AC-958E-4082-BA08-CD5F151795FB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{59B420AC-958E-4082-BA08-CD5F151795FB}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Test_juicy" ID="{637999C4-747A-4A26-A4A8-2E4030E72011}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Game_over_too_fast" ID="{BCDF6C84-88B3-431E-B304-68E138A56B9A}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="State_down" ID="{307D701E-4880-4BCF-9DAE-28094D5977A7}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Game_over_too_slow" ID="{077C244A-1C44-44D8-9197-998A44D0CD48}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="State_Up" ID="{755725FB-2885-4F6B-8C67-B54F86260552}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_start" ID="{9F624FEC-255D-40B8-BC65-E55F1C49651A}" WorkUnitID="{ECA02F49-F6B9-4729-9789-80130763A8DA}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="State_2" ID="{C4BA2D2C-A24C-4075-B22F-33C72B0C71AD}"/>
+						<CurrentStateRef Name="Alive" ID="{D545BAF4-88E3-44E1-89E5-FFAC84C50B6A}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
