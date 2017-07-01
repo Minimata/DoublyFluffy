@@ -39,8 +39,8 @@ public class JuicinessController : MonoBehaviour, IRestartable
 			GameController.instance.DefeatHigh();
 	    }
 
-	    //if (oldState < currentState) AkSoundEngine.PostEvent("State_down", null);
-        //else if (oldState > currentState) AkSoundEngine.PostEvent("State_Up", null);
+	    if (oldState < currentState) AkSoundEngine.PostEvent("State_down", gameObject);
+        else if (oldState > currentState) AkSoundEngine.PostEvent("State_Up", gameObject);
 
 	    switch (currentState)
         {
@@ -68,14 +68,6 @@ public class JuicinessController : MonoBehaviour, IRestartable
 
     void IRestartable.Restart(GameController controller)
     {
-        /*
-        AkSoundEngine.PostEvent("State_Up", null);
-        AkSoundEngine.PostEvent("State_down", null);
-        AkSoundEngine.PostEvent("Game_over_too_fast", null);
-        AkSoundEngine.PostEvent("Game_over_too_slow", null);
-        AkSoundEngine.PostEvent("Restart", null);
-        */
-        
         juice = defaultJuice;
     }
 
