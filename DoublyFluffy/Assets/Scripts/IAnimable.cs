@@ -8,4 +8,5 @@ public interface IAnimable
     void AnimTurbo();
     void AnimMoveLeft();
     void AnimMoveRight();
+    void Explode();
 }

@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour, IRestartable, IAnimable {
 
     public GameObject juiciness;
     private JuicinessController juicy;
+
+    public GameObject parent;
     
 	private bool levelEnded = false;
 
@@ -28,7 +30,8 @@ public class PlayerController : MonoBehaviour, IRestartable, IAnimable {
 	// Update is called once per frame
 	void Update () {
         //Inputs and moving behavior
-		if (Input.GetKeyDown ("right")) {
+        print(positionOnLane);
+        if (Input.GetKeyDown ("right")) {
 			if (positionOnLane < GameController.instance.nbLanes - 1) {
 				positionOnLane++;
                 GameController.instance.MoveRight();
@@ -43,7 +46,7 @@ public class PlayerController : MonoBehaviour, IRestartable, IAnimable {
 		float sizeOfLane = GameController.instance.sizeOfLane;
 		float offset = (sizeOfLane / 2f);
 		float newXPosition = GameController.instance.leftPosition + (sizeOfLane * (positionOnLane + 1) - offset);
-		rb2d.transform.position = Vector3.Lerp(rb2d.transform.position, new Vector3(newXPosition, rb2d.transform.position.y, transform.position.z), horizontalSpeed * Time.deltaTime);
+		parent.transform.position = Vector3.Lerp(parent.transform.position, new Vector3(newXPosition, parent.transform.position.y, parent.transform.position.z), horizontalSpeed * Time.deltaTime);
 
         //Juice control
 		if(!levelEnded)
@@ -69,23 +72,23 @@ public class PlayerController : MonoBehaviour, IRestartable, IAnimable {
 
     void IAnimable.State0()
     {
-        anim.SetTrigger("State0");
+        anim.SetInteger("State", 0);
     }
     void IAnimable.State1()
     {
-        anim.SetTrigger("State1");
+        anim.SetInteger("State", 1);
     }
     void IAnimable.State2()
     {
-        anim.SetTrigger("State2");
+        anim.SetInteger("State", 2);
     }
     void IAnimable.State3()
     {
-        anim.SetTrigger("State3");
+        anim.SetInteger("State", 3);
     }
     void IAnimable.AnimTurbo()
     {
-        anim.SetTrigger("Turbo");
+        anim.SetInteger("State", 4);
     }
 
     void IAnimable.AnimMoveLeft()
@@ -96,6 +99,10 @@ public class PlayerController : MonoBehaviour, IRestartable, IAnimable {
     void IAnimable.AnimMoveRight()
     {
         anim.SetTrigger("MoveRight");
+    }
+    void IAnimable.Explode()
+    {
+        anim.SetTrigger("Explode");
     }
 
 }
