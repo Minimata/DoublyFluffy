@@ -95,7 +95,6 @@ public class JuicinessController : MonoBehaviour, IRestartable
     public void Increment()
     {
         juice += increment*isBlue;
-        print(increment);
     }
 
     void IRestartable.Restart(GameController controller)

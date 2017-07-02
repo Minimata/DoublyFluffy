@@ -122,7 +122,7 @@ public class GameController : MonoBehaviour {
 		NextLevelText.enabled = true;
 		BestScore.text = "Best score : " + PlayerPrefs.GetFloat("BestScore");
 		BestScore.enabled = true;
-        AkSoundEngine.PostEvent("ToVictory", gameObject);
+        AkSoundEngine.PostEvent("ToVictory", null);
         Debug.Log("Victory !");
 	}
 
