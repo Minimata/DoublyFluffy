@@ -1,16 +1,17 @@
 Event	ID	Name			Wwise Object Path	Notes
-	489003304	State_Up			\Default Work Unit\State_Up	
-	775889684	Game_over_too_fast			\Default Work Unit\Game_over_too_fast	
-	957044181	Game_over_too_slow			\Default Work Unit\Game_over_too_slow	
-	1203400786	Restart			\Default Work Unit\Restart	
-	2716678721	Victory			\Default Work Unit\Victory	
-	3579758495	State_down			\Default Work Unit\State_down	
-	3725903807	Music_start			\Default Work Unit\Music_start	
-	4246082459	ToState4			\Default Work Unit\ToState4	
-	4246082460	ToState3			\Default Work Unit\ToState3	
-	4246082461	ToState2			\Default Work Unit\ToState2	
-	4246082462	ToState1			\Default Work Unit\ToState1	
-	4246082463	ToState0			\Default Work Unit\ToState0	
+	209243740	ToVictory			\Default Work Unit\Music_states\ToVictory	
+	489003304	State_Up			\Default Work Unit\Music events\State_Up	
+	775889684	Game_over_too_fast			\Default Work Unit\Music_states\Game_over_too_fast	
+	957044181	Game_over_too_slow			\Default Work Unit\Music_states\Game_over_too_slow	
+	1203400786	Restart			\Default Work Unit\Music events\Restart	
+	1890578599	switchlane			\Default Work Unit\Player\switchlane	
+	3579758495	State_down			\Default Work Unit\Music events\State_down	
+	3725903807	Music_start			\Default Work Unit\Music events\Music_start	
+	4246082459	ToState4			\Default Work Unit\Music_states\ToState4	
+	4246082460	ToState3			\Default Work Unit\Music_states\ToState3	
+	4246082461	ToState2			\Default Work Unit\Music_states\ToState2	
+	4246082462	ToState1			\Default Work Unit\Music_states\ToState1	
+	4246082463	ToState0			\Default Work Unit\Music_states\ToState0	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	3762137787	Player_life			\Default Work Unit\Player_life	
@@ -26,23 +27,33 @@ Custom State	ID	Name	State Group	Owner		Notes
 	677204877	Dead_fast	Player_life	\Interactive Music Hierarchy\Default Work Unit\State_juicy_music		
 
 Effect plug-ins	ID	Name	Type				Notes
+	1588715066	Echoes_Linear	Wwise Delay			
 	4043410653	Pitche_schifter	Wwise Pitch Shifter			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1706520	Powerup2	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Powerup2_17B75EF5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_state_updown\Stage_up\Powerup2		58440
+	78283646	Powerup3	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Powerup3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_state_updown\Stage_up\Powerup3		56608
 	115080511	Basse_transition_2_mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Basse_transition_2_mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\Transition\Basse_transition_2_mesures_160BPM		576064
 	127244324	Basse_stage_1_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\State_2\Basse_stage_1_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_2\State 2\Basse_stage_1_16mesures_160BPM		4608064
+	152217267	Powerdown4	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Powerdown4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_state_updown\Stage_down\Powerdown4		48064
 	159727642	Eddy_wow	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Eddy_wow_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\Transition\Eddy_wow		213328
 	245027827	Daft Punk One More Time Vocal Effect	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Daft Punk One More Time Vocal Effect_346275D6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Daft Punk One More Time Vocal Effect		438484
 	246611107	Lead_stage_1_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Lead_stage_1_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_3\State 3\Lead_stage_1_16mesures_160BPM		4608064
+	266514762	Powerdown1	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Powerdown1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_state_updown\Stage_down\Powerdown1		96064
 	284547349	Too_slow	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Too_slow_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_game_over\Too_slow		96064
+	308951651	Powerdown2	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Powerdown2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_state_updown\Stage_down\Powerdown2		192064
 	451011026	batterie_stage_2_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\batterie_stage_2_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_4\State 4\batterie_stage_2_16mesures_160BPM		4608064
 	454522426	Basse_transition_descente_2_mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Basse_transition_descente_2_mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\Transition_descendante\Basse_transition_descente_2_mesures_160BPM		576064
+	508661593	Powerup4	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Powerup4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_state_updown\Stage_up\Powerup4		18792
 	522735093	batterie_stage_1_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\batterie_stage_1_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_3\State 3\batterie_stage_1_16mesures_160BPM		4608064
+	546290330	Déplacement_1	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Déplacement_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Déplacements\Déplacements\Déplacement_1		183884
 	606101183	Basse_stage_1_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Basse_stage_1_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_3\State 3\Basse_stage_1_16mesures_160BPM		4608064
 	684496588	batterie_stage_1_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\State_3\batterie_stage_1_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_1\State 1\batterie_stage_1_16mesures_160BPM		4608064
 	732126531	Lead_stage_2_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Lead_stage_2_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_4\State 4\Lead_stage_2_16mesures_160BPM		4608064
 	750473923	Too_fast_Explosion	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Too_fast_Explosion_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_game_over\Too_fast_Explosion		1702412
 	758779315	Lead_transition_descente_2_mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Lead_transition_descente_2_mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\Transition_descendante\Lead_transition_descente_2_mesures_160BPM		576064
+	792656206	Powerdown3	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Powerdown3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_state_updown\Stage_down\Powerdown3		144064
+	857495145	Powerup1	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\Powerup1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sons_state_updown\Stage_up\Powerup1		36284
 	875802478	basse_stage_2_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\basse_stage_2_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_4\State 4\basse_stage_2_16mesures_160BPM		4608064
 	947501454	batterie_stage_1_16mesures_160BPM	C:\Users\vpers\OneDrive\Documents\DoublyFluffy\DoublyFluffy\DoublyFluffy_WwiseProject\.cache\Windows\SFX\State_2\batterie_stage_1_16mesures_160BPM_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\State_juicy_music\State_2\State 2\batterie_stage_1_16mesures_160BPM		4608064
 

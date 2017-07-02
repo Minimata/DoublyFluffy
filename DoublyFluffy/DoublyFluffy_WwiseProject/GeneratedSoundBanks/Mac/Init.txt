@@ -4,6 +4,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 
 State	ID	Name	State Group			Notes
 	748895195	None	State_juicyiness			
+	979765101	Win	State_juicyiness			
 	1277114377	State_4	State_juicyiness			
 	1277114380	State_1	State_juicyiness			
 	1277114381	State_0	State_juicyiness			

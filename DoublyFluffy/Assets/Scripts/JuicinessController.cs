@@ -59,8 +59,8 @@ public class JuicinessController : MonoBehaviour, IRestartable
 			GameController.instance.DefeatHigh();
 	    }
 
-	    if (oldState < currentState) AkSoundEngine.PostEvent("State_down", gameObject);
-        else if (oldState > currentState) AkSoundEngine.PostEvent("State_Up", gameObject);
+	    if (oldState < currentState) AkSoundEngine.PostEvent("State_Up", gameObject);
+        else if (oldState > currentState) AkSoundEngine.PostEvent("State_down", gameObject);
 
         if(isBlue < 0)
             increment = juice * accelerationFactor * blueIncrement;

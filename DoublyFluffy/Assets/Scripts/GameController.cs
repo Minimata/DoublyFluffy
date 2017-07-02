@@ -26,6 +26,8 @@ public class GameController : MonoBehaviour {
     public Text DefeatLowText;
     public Text DefeatHighText;
 	public Text NextLevelText;
+	public Text BestScore;
+	public Text ScoreText;
 	public Text LevelText;
 	public Image Pointer;
 
@@ -70,6 +72,7 @@ public class GameController : MonoBehaviour {
 			SceneManager.LoadScene (nextLevel);
             Time.timeScale = 1;
 			nextLevel = -1;
+			PlayerPrefs.DeleteKey("BestScore");
 		}
 
 
@@ -85,6 +88,7 @@ public class GameController : MonoBehaviour {
         DefeatLowText.enabled = false;
         DefeatHighText.enabled = false;
 		NextLevelText.enabled = false;
+		BestScore.enabled = false;
 		LevelText.text = "Level : " + (SceneManager.GetActiveScene ().buildIndex + 1);
     }
 
@@ -116,13 +120,17 @@ public class GameController : MonoBehaviour {
 		nextLevel = _nextLevel;
 		VictoryText.enabled = true;
 		NextLevelText.enabled = true;
-        AkSoundEngine.PostEvent("Victory", gameObject);
+		BestScore.text = "Best score : " + PlayerPrefs.GetFloat("BestScore");
+		BestScore.enabled = true;
+        AkSoundEngine.PostEvent("ToVictory", gameObject);
         Debug.Log("Victory !");
 	}
 
 	public void DefeatLow()
 	{
 	    DefeatLowText.enabled = true;
+		if(BestScore.text != "")
+			BestScore.enabled = true;
         AkSoundEngine.PostEvent("Game_over_too_slow", gameObject);
         Debug.Log("You're going too slow !");
 	}
@@ -130,6 +138,8 @@ public class GameController : MonoBehaviour {
     public void DefeatHigh()
     {
         DefeatHighText.enabled = true;
+		if(BestScore.text != "")
+			BestScore.enabled = true;
         AkSoundEngine.PostEvent("Game_over_too_fast", gameObject);
         Debug.Log("YOUR EPICNESS EXPLODED THE HYPERBEAM-MOTORISED SPACESHIP !!!");
     }

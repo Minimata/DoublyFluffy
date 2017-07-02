@@ -28,11 +28,11 @@
 				</Folder>
 				<Folder Name="Sons_state_updown" ID="{CDD8FCFF-F63C-40F2-B41A-CBD9F0E610C9}" ShortID="654465429">
 					<ChildrenList>
-						<Sound Name="Stage Down" ID="{0B9FF980-688B-44F3-A0EE-DBDAC2BF7E78}" ShortID="688707756" Type="SoundFX">
+						<RandomSequenceContainer Name="Stage_up" ID="{C599B128-0AE9-42CB-B600-2715214191F2}" ShortID="768560746">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -45,20 +45,100 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Stage Down" ID="{7BF02D4C-C9FE-44EF-BB78-2041C0B33944}" ShortID="413958571">
-									<Language>SFX</Language>
-									<AudioFile>Stage Down.wav</AudioFile>
-								</AudioFileSource>
+								<Sound Name="Powerup1" ID="{07CE6E03-D4F3-4E56-920C-A0CA8304D060}" ShortID="796593034" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Powerup1" ID="{1402C74E-62F8-49DA-9BA2-3BC77B37651C}" ShortID="857495145">
+											<Language>SFX</Language>
+											<AudioFile>Powerup1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Powerup1" ID="{1402C74E-62F8-49DA-9BA2-3BC77B37651C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Powerup2" ID="{5BAB8BB8-C779-47E3-9C79-44FCF7ACB7D4}" ShortID="423837183" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Powerup2" ID="{22FF9D4B-9C37-4B57-B41F-7AAF48B7CC59}" ShortID="1706520">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.111508240200842"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.661855361192096"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Powerup2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Powerup2" ID="{22FF9D4B-9C37-4B57-B41F-7AAF48B7CC59}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Powerup3" ID="{7B296AD2-14C9-4401-A1DE-4A6C4DD75E5C}" ShortID="1050208104" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Powerup3" ID="{F40C33E4-4289-4462-AB8D-0FE281573804}" ShortID="78283646">
+											<Language>SFX</Language>
+											<AudioFile>Powerup3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Powerup3" ID="{F40C33E4-4289-4462-AB8D-0FE281573804}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Powerup4" ID="{90FA5EAA-6A03-44EF-ADBD-51777A2E144F}" ShortID="851232266" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Powerup4" ID="{1A2D562E-AA53-42F6-9208-D73635474350}" ShortID="508661593">
+											<Language>SFX</Language>
+											<AudioFile>Powerup4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Powerup4" ID="{1A2D562E-AA53-42F6-9208-D73635474350}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Stage Down" ID="{7BF02D4C-C9FE-44EF-BB78-2041C0B33944}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Stage Up" ID="{724B7E0E-1447-4F22-BC2B-9E3D1BA82E9B}" ShortID="733391707" Type="SoundFX">
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Stage_down" ID="{E5010B9B-2979-4645-8D68-33B7ED2C8A2B}" ShortID="336815788">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -71,15 +151,91 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Stage Up" ID="{1F3A34E8-C2CB-4F4D-BCE3-568E41EBE9B5}" ShortID="634659777">
-									<Language>SFX</Language>
-									<AudioFile>Stage Up.wav</AudioFile>
-								</AudioFileSource>
+								<Sound Name="Powerdown1" ID="{3206E72A-85F6-479F-A627-9658492FC8CE}" ShortID="48581444" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Powerdown1" ID="{23548A21-8229-4367-B4F8-2FBB3F16410D}" ShortID="266514762">
+											<Language>SFX</Language>
+											<AudioFile>Powerdown1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Powerdown1" ID="{23548A21-8229-4367-B4F8-2FBB3F16410D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Powerdown2" ID="{FC94F2B6-640A-4B87-B7A9-A55A798A1F05}" ShortID="653345339" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Powerdown2" ID="{E9FB06B6-F64D-4888-95F6-A641D04EEBB0}" ShortID="308951651">
+											<Language>SFX</Language>
+											<AudioFile>Powerdown2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Powerdown2" ID="{E9FB06B6-F64D-4888-95F6-A641D04EEBB0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Powerdown3" ID="{1352FC52-0083-4F65-91D8-1BE5E0868CD7}" ShortID="275867254" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Powerdown3" ID="{62557CF9-ECC1-4B03-95D7-ED99A985A92A}" ShortID="792656206">
+											<Language>SFX</Language>
+											<AudioFile>Powerdown3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Powerdown3" ID="{62557CF9-ECC1-4B03-95D7-ED99A985A92A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Powerdown4" ID="{5973D793-E272-4AAD-BA0E-8D39B6C8EB29}" ShortID="584754871" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Powerdown4" ID="{0D44EB4A-6790-46FB-BBB8-290A49BC663B}" ShortID="152217267">
+											<Language>SFX</Language>
+											<AudioFile>Powerdown4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Powerdown4" ID="{0D44EB4A-6790-46FB-BBB8-290A49BC663B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Stage Up" ID="{1F3A34E8-C2CB-4F4D-BCE3-568E41EBE9B5}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Sons_game_over" ID="{8AE8C3F2-6BA1-4A2F-A5AE-48F62F3B5A67}" ShortID="431308155">
@@ -124,25 +280,6 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
-				<Sound Name="Bomberman victory theme" ID="{EA2F0FE4-5539-4F99-A0BB-F8610ABF2619}" ShortID="140728183" Type="SoundFX">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Bomberman victory theme" ID="{EE93131B-67EB-4B39-B1C6-3DFD8D01EF2F}" ShortID="168054633">
-							<Language>SFX</Language>
-							<AudioFile>Bomberman victory theme.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Bomberman victory theme" ID="{EE93131B-67EB-4B39-B1C6-3DFD8D01EF2F}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Daft Punk One More Time Vocal Effect" ID="{E90EF879-0362-42BE-B00D-35582767DA48}" ShortID="628184852" Type="SoundFX">
 					<PropertyList>
 						<Property Name="Pitch" Type="int32">
@@ -154,6 +291,9 @@
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
@@ -174,6 +314,135 @@
 						<ActiveSource Name="Daft Punk One More Time Vocal Effect" ID="{3A743EE8-DC37-4235-8A73-F1EEFC3755E5}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="Déplacements" ID="{4D08DBDD-CB12-4514-9597-E9119B88C19A}" ShortID="966462345">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Déplacements" ID="{32DD29EF-9E70-4F22-85CA-7E6B5F5D49FC}" ShortID="224705272">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Déplacement_1" ID="{EBAE9502-A058-451A-B5F8-D423E56772B4}" ShortID="299602559" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Déplacement_1" ID="{D77F6C6B-6041-4F1A-ACC2-8AD69F753C26}" ShortID="546290330">
+											<Language>SFX</Language>
+											<AudioFile>Déplacement_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Déplacement_1" ID="{D77F6C6B-6041-4F1A-ACC2-8AD69F753C26}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Déplacement_01" ID="{0E287870-8283-46A4-B757-B1E6FBC7DB96}" ShortID="209997160" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>710</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Déplacement_1" ID="{D7A2A4B7-BC73-4D75-8D40-C19DEC25FAC9}" ShortID="582174902">
+											<Language>SFX</Language>
+											<AudioFile>Déplacement_1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="546290330"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Déplacement_1" ID="{D7A2A4B7-BC73-4D75-8D40-C19DEC25FAC9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Déplacement_02" ID="{92175F97-8FF7-4E9B-BE60-1236F07048A2}" ShortID="749500757" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>350</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Déplacement_1" ID="{B975D5D2-E46C-477A-8EC4-6A025020E1E8}" ShortID="434333081">
+											<Language>SFX</Language>
+											<AudioFile>Déplacement_1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="546290330"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Déplacement_1" ID="{B975D5D2-E46C-477A-8EC4-6A025020E1E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Déplacement_03" ID="{7EC1DBCB-A61B-49B6-8ACA-DBBBB372C5F0}" ShortID="965037379" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>1140</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Déplacement_1" ID="{394E36E8-504E-4F4A-A327-9CC52AC10981}" ShortID="405588834">
+											<Language>SFX</Language>
+											<AudioFile>Déplacement_1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="546290330"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Déplacement_1" ID="{394E36E8-504E-4F4A-A327-9CC52AC10981}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
