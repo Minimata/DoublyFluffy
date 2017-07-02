@@ -44,9 +44,9 @@
 					<ShortName>Powerup3.wav</ShortName>
 					<Path>SFX\Powerup3_9E69E797.wem</Path>
 				</File>
-				<File Id="115080511" Language="SFX">
-					<ShortName>Basse_transition_2_mesures_160BPM.wav</ShortName>
-					<Path>SFX\Basse_transition_2_mesures_160BPM_4B8CC0C5.wem</Path>
+				<File Id="125719700" Language="SFX">
+					<ShortName>New Batterie section 2.wav</ShortName>
+					<Path>SFX\New Batterie section 2_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="127244324" Language="SFX">
 					<ShortName>State_2\Basse_stage_1_16mesures_160BPM.wav</ShortName>
@@ -59,6 +59,10 @@
 				<File Id="159727642" Language="SFX">
 					<ShortName>Eddy_wow.wav</ShortName>
 					<Path>SFX\Eddy_wow_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="242302065" Language="SFX">
+					<ShortName>New transistiondown  basse.wav</ShortName>
+					<Path>SFX\New transistiondown  basse_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="245027827" Language="SFX">
 					<ShortName>Daft Punk One More Time Vocal Effect.wav</ShortName>
@@ -80,13 +84,13 @@
 					<ShortName>Powerdown2.wav</ShortName>
 					<Path>SFX\Powerdown2_9E69E797.wem</Path>
 				</File>
-				<File Id="451011026" Language="SFX">
-					<ShortName>batterie_stage_2_16mesures_160BPM.wav</ShortName>
-					<Path>SFX\batterie_stage_2_16mesures_160BPM_4B8CC0C5.wem</Path>
+				<File Id="416465880" Language="SFX">
+					<ShortName>New lead section 2.wav</ShortName>
+					<Path>SFX\New lead section 2_4B8CC0C5.wem</Path>
 				</File>
-				<File Id="454522426" Language="SFX">
-					<ShortName>Basse_transition_descente_2_mesures_160BPM.wav</ShortName>
-					<Path>SFX\Basse_transition_descente_2_mesures_160BPM_4B8CC0C5.wem</Path>
+				<File Id="480767088" Language="SFX">
+					<ShortName>new transition up.wav</ShortName>
+					<Path>SFX\new transition up_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="508661593" Language="SFX">
 					<ShortName>Powerup4.wav</ShortName>
@@ -108,21 +112,21 @@
 					<ShortName>Basse_stage_1_16mesures_160BPM.wav</ShortName>
 					<Path>SFX\Basse_stage_1_16mesures_160BPM_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="610997683" Language="SFX">
+					<ShortName>New transistiondown  lead.wav</ShortName>
+					<Path>SFX\New transistiondown  lead_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="684496588" Language="SFX">
 					<ShortName>State_3\batterie_stage_1_16mesures_160BPM.wav</ShortName>
 					<Path>SFX\State_3\batterie_stage_1_16mesures_160BPM_4B8CC0C5.wem</Path>
-				</File>
-				<File Id="732126531" Language="SFX">
-					<ShortName>Lead_stage_2_16mesures_160BPM.wav</ShortName>
-					<Path>SFX\Lead_stage_2_16mesures_160BPM_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="750473923" Language="SFX">
 					<ShortName>Too_fast_Explosion.wav</ShortName>
 					<Path>SFX\Too_fast_Explosion_9E69E797.wem</Path>
 				</File>
-				<File Id="758779315" Language="SFX">
-					<ShortName>Lead_transition_descente_2_mesures_160BPM.wav</ShortName>
-					<Path>SFX\Lead_transition_descente_2_mesures_160BPM_4B8CC0C5.wem</Path>
+				<File Id="751257142" Language="SFX">
+					<ShortName>New Basse section 2.wav</ShortName>
+					<Path>SFX\New Basse section 2_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="792656206" Language="SFX">
 					<ShortName>Powerdown3.wav</ShortName>
@@ -131,10 +135,6 @@
 				<File Id="857495145" Language="SFX">
 					<ShortName>Powerup1.wav</ShortName>
 					<Path>SFX\Powerup1_9E69E797.wem</Path>
-				</File>
-				<File Id="875802478" Language="SFX">
-					<ShortName>basse_stage_2_16mesures_160BPM.wav</ShortName>
-					<Path>SFX\basse_stage_2_16mesures_160BPM_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="947501454" Language="SFX">
 					<ShortName>State_2\batterie_stage_1_16mesures_160BPM.wav</ShortName>

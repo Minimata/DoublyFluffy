@@ -20,7 +20,7 @@
 								<Action Name="Set State" ID="{3051EE6A-C7FF-46CC-8899-203CF0E3BA31}" ShortID="117055707" Type="SetState" Scope="All" Global="true">
 									<SetItemParam>
 										<Group Name="State_juicyiness" ID="{462CAEC9-1598-40E1-9187-FB95B93BFDCC}"/>
-										<GroupItem Name="State_2" ID="{C4BA2D2C-A24C-4075-B22F-33C72B0C71AD}"/>
+										<GroupItem Name="State_3" ID="{8CF6AE98-6839-4EE6-B266-BF5EC45C2117}"/>
 									</SetItemParam>
 								</Action>
 							</ChildrenList>
@@ -40,7 +40,7 @@
 								<Action Name="Set State" ID="{9A2841D8-FC08-48E7-BD9C-386D61E1019B}" ShortID="792937683" Type="SetState" Scope="All" Global="true">
 									<SetItemParam>
 										<Group Name="State_juicyiness" ID="{462CAEC9-1598-40E1-9187-FB95B93BFDCC}"/>
-										<GroupItem Name="State_1" ID="{46F92DB8-39CD-48A9-B0A9-22E9CB450462}"/>
+										<GroupItem Name="State_3" ID="{8CF6AE98-6839-4EE6-B266-BF5EC45C2117}"/>
 									</SetItemParam>
 								</Action>
 							</ChildrenList>

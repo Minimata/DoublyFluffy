@@ -56,7 +56,7 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="State_1" ID="{46F92DB8-39CD-48A9-B0A9-22E9CB450462}"/>
+						<CurrentStateRef Name="State_3" ID="{8CF6AE98-6839-4EE6-B266-BF5EC45C2117}"/>
 						<CurrentStateRef Name="Alive" ID="{D545BAF4-88E3-44E1-89E5-FFAC84C50B6A}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>

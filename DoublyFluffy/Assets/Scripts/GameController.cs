@@ -110,7 +110,7 @@ public class GameController : MonoBehaviour {
         DefeatHighText.enabled = false;
 		NextLevelText.enabled = false;
 		BestScore.enabled = false;
-		LevelText.text = "Level : " + (SceneManager.GetActiveScene ().buildIndex + 1);
+		LevelText.text = "Level : " + (SceneManager.GetActiveScene ().buildIndex);
     }
 
     void Restart()
