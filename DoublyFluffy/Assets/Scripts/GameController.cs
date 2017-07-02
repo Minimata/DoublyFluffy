@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,6 +14,9 @@ public class GameController : MonoBehaviour {
 
 	private int nextLevel = -1;
     
+	private float time;
+	private float bestscore;
+
     public GameObject ground;
     private GroundController gnd;
     public GameObject juiciness;
@@ -30,6 +34,7 @@ public class GameController : MonoBehaviour {
 	public Text ScoreText;
 	public Text LevelText;
 	public Image Pointer;
+
 
     void Awake(){
 		if (instance == null) {
@@ -58,6 +63,7 @@ public class GameController : MonoBehaviour {
         float xMax = nbLanes;
         leftPosition = -(xMax/2);
         sizeOfLane = xMax/nbLanes;
+		bestscore = -1;
     }
     
     void Update()
@@ -72,14 +78,16 @@ public class GameController : MonoBehaviour {
 			SceneManager.LoadScene (nextLevel);
             Time.timeScale = 1;
 			nextLevel = -1;
-			PlayerPrefs.DeleteKey("BestScore");
+			bestscore = -1;
 		}
 
 
-
-		//float currRotation = Pointer.transform.rotation.eulerAngles.z;
 		float juicyRotationNormalize = ((juicy.juice/((float) juicy.maxJuice))*180)-90;
 		Pointer.transform.rotation = Quaternion.Euler (new Vector3(0, 0, -juicyRotationNormalize));
+
+		// Timer
+		time += Time.deltaTime;
+		ScoreText.text = "Score \r " + Math.Round(time, 3);
 	}
     void PlayableUI()
     {
@@ -103,6 +111,7 @@ public class GameController : MonoBehaviour {
         {
             comp.Restart(this);
         }
+		time = 0;
     }
 
 	public void GameOver()
@@ -120,7 +129,9 @@ public class GameController : MonoBehaviour {
 		nextLevel = _nextLevel;
 		VictoryText.enabled = true;
 		NextLevelText.enabled = true;
-		BestScore.text = "Best score : " + PlayerPrefs.GetFloat("BestScore");
+		if(bestscore == -1 || time < bestscore)
+			bestscore =  (float) Math.Round(time, 3);
+		BestScore.text = "Best score : " + bestscore;
 		BestScore.enabled = true;
         AkSoundEngine.PostEvent("ToVictory", null);
         Debug.Log("Victory !");
@@ -129,7 +140,7 @@ public class GameController : MonoBehaviour {
 	public void DefeatLow()
 	{
 	    DefeatLowText.enabled = true;
-		if(BestScore.text != "")
+		if(bestscore > 0)
 			BestScore.enabled = true;
         AkSoundEngine.PostEvent("Game_over_too_slow", gameObject);
         Debug.Log("You're going too slow !");
@@ -138,7 +149,7 @@ public class GameController : MonoBehaviour {
     public void DefeatHigh()
     {
         DefeatHighText.enabled = true;
-		if(BestScore.text != "")
+		if(bestscore > 0)
 			BestScore.enabled = true;
         AkSoundEngine.PostEvent("Game_over_too_fast", gameObject);
         Debug.Log("YOUR EPICNESS EXPLODED THE HYPERBEAM-MOTORISED SPACESHIP !!!");
