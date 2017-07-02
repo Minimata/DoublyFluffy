@@ -86,28 +86,31 @@ public class JuicinessController : MonoBehaviour, IRestartable
         switch (currentState)
         {
             case 0:
+                GameController.instance.State0();
                 AkSoundEngine.PostEvent("ToState0", null);
                 increment += linearFactor;
                 break;
             case 1:
+                GameController.instance.State1();
                 AkSoundEngine.PostEvent("ToState1", null);
                 break;
             case 2:
+                GameController.instance.State2();
                 AkSoundEngine.PostEvent("ToState2", null);
                 break;
             case 3:
+                GameController.instance.State3();
                 AkSoundEngine.PostEvent("ToState3", null);
                 break;
             case 4:
                 isTurbo = true;
+                GameController.instance.Turbo();
                 AkSoundEngine.PostEvent("ToState4", null);
                 break;
 			
-
         }
 
 	    oldState = currentState;
-
 	}
 
     //Called in player update if level not finished
@@ -120,10 +123,8 @@ public class JuicinessController : MonoBehaviour, IRestartable
         }
         else
         {
-            GameController.instance.Turbo();
             juice = maxJuice;
             turboTime -= Time.deltaTime;
-            print(turboTime);
             if (turboTime < 0)
             {
                 if (isBlue > 0)

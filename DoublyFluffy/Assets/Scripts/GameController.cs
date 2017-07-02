@@ -173,9 +173,18 @@ public class GameController : MonoBehaviour {
         Debug.Log("YOUR EPICNESS EXPLODED THE HYPERBEAM-MOTORISED SPACESHIP !!!");
     }
 
+    public void Explode()
+    {
+        camerAnim.SetTrigger("Explode");
+        foreach (var comp in anim)
+        {
+            comp.Explode();
+        }
+    }
+
     public void State0()
     {
-        camerAnim.SetTrigger("State0");
+        camerAnim.SetInteger("State", 0);
         foreach (var comp in anim)
         {
             comp.State0();
@@ -183,7 +192,7 @@ public class GameController : MonoBehaviour {
     }
     public void State1()
     {
-        camerAnim.SetTrigger("State1");
+        camerAnim.SetInteger("State", 1);
         foreach (var comp in anim)
         {
             comp.State1();
@@ -191,7 +200,7 @@ public class GameController : MonoBehaviour {
     }
     public void State2()
     {
-        camerAnim.SetTrigger("State2");
+        camerAnim.SetInteger("State", 2);
         foreach (var comp in anim)
         {
             comp.State2();
@@ -199,7 +208,7 @@ public class GameController : MonoBehaviour {
     }
     public void State3()
     {
-        camerAnim.SetTrigger("State3");
+        camerAnim.SetInteger("State", 3);
         foreach (var comp in anim)
         {
             comp.State3();
@@ -207,7 +216,7 @@ public class GameController : MonoBehaviour {
     }
     public void Turbo()
     {
-        camerAnim.SetTrigger("Turbo");
+        camerAnim.SetInteger("State", 4);
         foreach (var comp in anim)
         {
             comp.AnimTurbo();
