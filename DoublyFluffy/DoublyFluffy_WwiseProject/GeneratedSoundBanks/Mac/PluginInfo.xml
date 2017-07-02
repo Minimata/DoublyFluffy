@@ -3,5 +3,6 @@
 	<Plugins>
 		<Plugin Name="Wwise Delay" ID="6946819" DLL="AkDelay"/>
 		<Plugin Name="Wwise Pitch Shifter" ID="8912899" DLL="AkPitchShifter"/>
+		<Plugin Name="Wwise Harmonizer" ID="9043971" DLL="AkHarmonizer"/>
 	</Plugins>
 </PluginInfo>

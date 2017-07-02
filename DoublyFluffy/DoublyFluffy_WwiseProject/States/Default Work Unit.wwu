@@ -11,7 +11,6 @@
 						<State Name="State_3" ID="{8CF6AE98-6839-4EE6-B266-BF5EC45C2117}"/>
 						<State Name="State_4" ID="{D73E03CA-2667-445F-AE68-D4CC5E9B14A6}"/>
 						<State Name="State_0" ID="{C9F56461-FDBD-4598-A4D1-EA82F7A0AF36}"/>
-						<State Name="Win" ID="{82A355D2-55A8-4F13-BCD0-3B5AF2372C90}"/>
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="Player_life" ID="{3843A132-A87A-4D3D-90F6-D854532A95CE}">

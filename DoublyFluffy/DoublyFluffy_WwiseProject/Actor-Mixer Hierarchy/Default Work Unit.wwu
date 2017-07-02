@@ -443,6 +443,29 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Sons_victory" ID="{644091EE-FCF6-48D1-9CB2-DA56CE4FD3AD}" ShortID="608154917">
+					<ChildrenList>
+						<Sound Name="Victory theme" ID="{7E66064F-4CC2-459A-A392-2C2BA9DF9525}" ShortID="186149269" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1B37BAD1-BF4C-4525-A46F-30846B53A197}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4D6FA1B-66AD-4EAA-AA73-D8E1CFEFC3B2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Victory theme" ID="{62CBDB80-D632-4CC6-B6A6-7F9768348552}" ShortID="532793349">
+									<Language>SFX</Language>
+									<AudioFile>Victory theme.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Victory theme" ID="{62CBDB80-D632-4CC6-B6A6-7F9768348552}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

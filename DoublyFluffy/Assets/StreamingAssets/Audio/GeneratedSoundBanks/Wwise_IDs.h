@@ -53,7 +53,6 @@ namespace AK
                 static const AkUniqueID STATE_2 = 1277114383U;
                 static const AkUniqueID STATE_3 = 1277114382U;
                 static const AkUniqueID STATE_4 = 1277114377U;
-                static const AkUniqueID WIN = 979765101U;
             } // namespace STATE
         } // namespace STATE_JUICYINESS
 

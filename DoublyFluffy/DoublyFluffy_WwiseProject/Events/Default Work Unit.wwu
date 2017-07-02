@@ -168,11 +168,21 @@
 						</Event>
 						<Event Name="ToVictory" ID="{17309A51-0621-4E45-B6D4-90F828E29C8B}">
 							<ChildrenList>
-								<Action Name="Set State" ID="{7A5D8315-95BD-4ADA-8499-065B374FB2DA}" ShortID="329690672" Type="SetState" Scope="All" Global="true">
+								<Action Name="Set State" ID="{5D2A4756-53DE-4D83-9DE4-73FE6AFBEEF5}" ShortID="983617412" Type="SetState" Scope="All" Global="true">
 									<SetItemParam>
-										<Group Name="State_juicyiness" ID="{462CAEC9-1598-40E1-9187-FB95B93BFDCC}"/>
-										<GroupItem Name="Win" ID="{82A355D2-55A8-4F13-BCD0-3B5AF2372C90}"/>
+										<Group Name="Player_life" ID="{3843A132-A87A-4D3D-90F6-D854532A95CE}"/>
+										<GroupItem Name="Dead_fast" ID="{120F8827-ECAF-4510-A68F-6E220DB40408}"/>
 									</SetItemParam>
+								</Action>
+								<Action Name="Play" ID="{500896CA-DBD7-4C6F-9D2C-647D6990A433}" ShortID="202104961" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{4D5BD7D6-E383-4A5C-A3D2-6A75D670393E}" Global="false">
+											<ObjectRef Name="Victory theme" ID="{7E66064F-4CC2-459A-A392-2C2BA9DF9525}" WorkUnitID="{968E17F5-859D-4EC3-AC74-D3E5CD0C11CA}"/>
+										</Element>
+									</ElementList>
 								</Action>
 							</ChildrenList>
 						</Event>
