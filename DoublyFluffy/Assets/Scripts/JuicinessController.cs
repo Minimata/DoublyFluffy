@@ -12,7 +12,14 @@ public class JuicinessController : MonoBehaviour, IRestartable
 
     public int maxJuice = 500;
     [SerializeField] private float defaultJuice = 100;
-    [SerializeField] private int nbStates = 5;
+    [SerializeField]
+    private float state0Limit = 150.0f;
+    [SerializeField]
+    private float state1Limit = 250.0f;
+    [SerializeField]
+    private float state2Limit = 350.0f;
+    [SerializeField]
+    private float state3Limit = 450.0f;
 
     [HideInInspector] public int isBlue = 0;
 
@@ -29,10 +36,16 @@ public class JuicinessController : MonoBehaviour, IRestartable
     private float yellowIncrement = 1.0f;
     private float blueIncrement = 1.33f;
 
+    private bool isTurbo = false;
+    private float turboTime;
+    [SerializeField] private float defaultTurboTime = 8.0f;
+
 
     // Use this for initialization
     void Start ()
     {
+        turboTime = defaultTurboTime;
+
         yellowIncrement = defaultYellowIncrement;
         blueIncrement = defaultBlueIncrement;
 
@@ -42,11 +55,14 @@ public class JuicinessController : MonoBehaviour, IRestartable
 	
 	// Update is called once per frame
 	void Update ()
-	{
-        float stateWidth = maxJuice / nbStates;
-	    currentState = Convert.ToInt32(juice/stateWidth);
+    {
+        if (juice < state0Limit) currentState = 0;
+        else if (juice >= state0Limit && juice < state1Limit) currentState = 1;
+        else if (juice >= state1Limit && juice < state2Limit) currentState = 2;
+        else if (juice >= state2Limit && juice < state3Limit) currentState = 3;
+        else if (juice >= state3Limit) currentState = 4;
 
-	    if (juice < 0)
+        if (juice < 0)
 	    {
 	        juice = 0;
 			GameController.instance.GameOver();
@@ -83,6 +99,7 @@ public class JuicinessController : MonoBehaviour, IRestartable
                 AkSoundEngine.PostEvent("ToState3", null);
                 break;
             case 4:
+                isTurbo = true;
                 AkSoundEngine.PostEvent("ToState4", null);
                 break;
 
@@ -92,14 +109,41 @@ public class JuicinessController : MonoBehaviour, IRestartable
 
 	}
 
+    //Called in player update if level not finished
     public void Increment()
     {
-        juice += increment*isBlue;
+        if (!isTurbo)
+        {
+            turboTime = defaultTurboTime;
+            juice += increment * isBlue;
+        }
+        else
+        {
+            GameController.instance.Turbo();
+            juice = maxJuice;
+            turboTime -= Time.deltaTime;
+            print(turboTime);
+            if (turboTime < 0)
+            {
+                if (isBlue > 0)
+                {
+                    GameController.instance.GameOver();
+                    GameController.instance.DefeatHigh();
+                }
+                else
+                {
+                    juice = (state2Limit + state3Limit)/2.0f;
+                }
+                isTurbo = false;
+            }
+        }
     }
 
     void IRestartable.Restart(GameController controller)
     {
         isBlue = 0;
+        isTurbo = false;
+        turboTime = defaultTurboTime;
         blueIncrement = defaultBlueIncrement;
         yellowIncrement = defaultYellowIncrement;
         juice = defaultJuice;

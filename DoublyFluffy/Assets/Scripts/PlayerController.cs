@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour, IRestartable {
+public class PlayerController : MonoBehaviour, IRestartable, IAnimable {
 
 	private Rigidbody2D rb2d;
 	private Animator anim;
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour, IRestartable {
 
         rb2d = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -31,13 +31,13 @@ public class PlayerController : MonoBehaviour, IRestartable {
 		if (Input.GetKeyDown ("right")) {
 			if (positionOnLane < GameController.instance.nbLanes - 1) {
 				positionOnLane++;
-				anim.SetTrigger ("MoveRight");
-			}
+                GameController.instance.MoveRight();
+            }
 		} else if (Input.GetKeyDown ("left")) {
 			if (positionOnLane > 0) {
 				positionOnLane--;
-				anim.SetTrigger ("MoveLeft");
-			}
+                GameController.instance.MoveLeft();
+            }
 		
 		}
 		float sizeOfLane = GameController.instance.sizeOfLane;
@@ -66,4 +66,36 @@ public class PlayerController : MonoBehaviour, IRestartable {
     {
 		levelEnded = true;
     }
+
+    void IAnimable.State0()
+    {
+        anim.SetTrigger("State0");
+    }
+    void IAnimable.State1()
+    {
+        anim.SetTrigger("State1");
+    }
+    void IAnimable.State2()
+    {
+        anim.SetTrigger("State2");
+    }
+    void IAnimable.State3()
+    {
+        anim.SetTrigger("State3");
+    }
+    void IAnimable.AnimTurbo()
+    {
+        anim.SetTrigger("Turbo");
+    }
+
+    void IAnimable.AnimMoveLeft()
+    {
+        anim.SetTrigger("MoveLeft");
+    }
+
+    void IAnimable.AnimMoveRight()
+    {
+        anim.SetTrigger("MoveRight");
+    }
+
 }

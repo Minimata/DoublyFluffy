@@ -24,7 +24,11 @@ public class GameController : MonoBehaviour {
 
     public GameObject[] restartables;
     private IRestartable[] rest;
-    
+    public GameObject[] animables;
+    private IAnimable[] anim;
+
+    private Animator camerAnim;
+
     public Text VictoryText;
     public Text GameOverText;
     public Text DefeatLowText;
@@ -50,6 +54,7 @@ public class GameController : MonoBehaviour {
 
         juicy = juiciness.GetComponent<JuicinessController>();
         gnd = ground.GetComponent<GroundController>();
+        camerAnim = GetComponent<Animator>();
 
         rest = new IRestartable[restartables.Length];
         int i = 0;
@@ -57,6 +62,14 @@ public class GameController : MonoBehaviour {
         {
             rest[i] = comp.GetComponent<IRestartable>();
             i++;
+        }
+
+        anim = new IAnimable[animables.Length];
+        int j = 0;
+        foreach (var comp in animables)
+        {
+            anim[j] = comp.GetComponent<IAnimable>();
+            j++;
         }
 
         nbLanes = gnd.nbLanes;
@@ -126,14 +139,19 @@ public class GameController : MonoBehaviour {
 
 	public void Victory(int _nextLevel)
 	{
+	    Time.timeScale = 0;
+
 		nextLevel = _nextLevel;
+
 		VictoryText.enabled = true;
 		NextLevelText.enabled = true;
+
 		if(bestscore == -1 || time < bestscore)
 			bestscore =  (float) Math.Round(time, 3);
 		BestScore.text = "Best score : " + bestscore;
 		BestScore.enabled = true;
-        AkSoundEngine.PostEvent("ToVictory", null);
+
+        AkSoundEngine.PostEvent("ToVictory", gameObject);
         Debug.Log("Victory !");
 	}
 
@@ -154,5 +172,64 @@ public class GameController : MonoBehaviour {
         AkSoundEngine.PostEvent("Game_over_too_fast", gameObject);
         Debug.Log("YOUR EPICNESS EXPLODED THE HYPERBEAM-MOTORISED SPACESHIP !!!");
     }
-    
+
+    public void State0()
+    {
+        camerAnim.SetTrigger("State0");
+        foreach (var comp in anim)
+        {
+            comp.State0();
+        }
+    }
+    public void State1()
+    {
+        camerAnim.SetTrigger("State1");
+        foreach (var comp in anim)
+        {
+            comp.State1();
+        }
+    }
+    public void State2()
+    {
+        camerAnim.SetTrigger("State2");
+        foreach (var comp in anim)
+        {
+            comp.State2();
+        }
+    }
+    public void State3()
+    {
+        camerAnim.SetTrigger("State3");
+        foreach (var comp in anim)
+        {
+            comp.State3();
+        }
+    }
+    public void Turbo()
+    {
+        camerAnim.SetTrigger("Turbo");
+        foreach (var comp in anim)
+        {
+            comp.AnimTurbo();
+        }
+    }
+    public void MoveLeft()
+    {
+
+        camerAnim.SetTrigger("MoveLeft");
+        foreach (var comp in anim)
+        {
+            comp.AnimMoveLeft();
+        }
+    }
+    public void MoveRight()
+    {
+
+        camerAnim.SetTrigger("MoveRight");
+        foreach (var comp in anim)
+        {
+            comp.AnimMoveRight();
+        }
+    }
+
 }
