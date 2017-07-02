@@ -33,7 +33,7 @@
 				<Event Id="4246082461" Name="ToState2" ObjectPath="\Events\Default Work Unit\Music_states\ToState2" MaxAttenuation="0.000000"/>
 				<Event Id="4246082460" Name="ToState3" ObjectPath="\Events\Default Work Unit\Music_states\ToState3" MaxAttenuation="0.000000"/>
 				<Event Id="4246082459" Name="ToState4" ObjectPath="\Events\Default Work Unit\Music_states\ToState4" MaxAttenuation="0.000000"/>
-				<Event Id="209243740" Name="ToVictory" ObjectPath="\Events\Default Work Unit\Music_states\ToVictory" MaxAttenuation="0.000000"/>
+				<Event Id="209243740" Name="ToVictory" ObjectPath="\Events\Default Work Unit\Music_states\ToVictory"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="1706520" Language="SFX">
@@ -95,6 +95,10 @@
 				<File Id="522735093" Language="SFX">
 					<ShortName>batterie_stage_1_16mesures_160BPM.wav</ShortName>
 					<Path>SFX\batterie_stage_1_16mesures_160BPM_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="532793349" Language="SFX">
+					<ShortName>Victory theme.wav</ShortName>
+					<Path>SFX\Victory theme_9E69E797.wem</Path>
 				</File>
 				<File Id="546290330" Language="SFX">
 					<ShortName>Déplacement_1.wav</ShortName>

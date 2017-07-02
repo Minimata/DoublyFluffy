@@ -13,6 +13,12 @@
 						<Property Name="TimeStretch" Type="Real32" Value="138"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="New_Wwise_Gain" ID="{34EFDEFE-FBAA-457B-BBDC-6E559BA98F75}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<PropertyList>
+						<Property Name="FullBandGain" Type="Real32" Value="6.5"/>
+						<Property Name="LFEGain" Type="Real32" Value="8"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
