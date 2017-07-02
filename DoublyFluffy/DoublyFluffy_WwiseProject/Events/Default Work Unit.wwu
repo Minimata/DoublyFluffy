@@ -176,7 +176,7 @@
 								</Action>
 								<Action Name="Play" ID="{500896CA-DBD7-4C6F-9D2C-647D6990A433}" ShortID="202104961" Type="Play" Scope="One" Global="false">
 									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="3"/>
+										<Property Name="Delay" Type="Real64" Value="1.5"/>
 									</PropertyList>
 									<ElementList>
 										<Element ID="{4D5BD7D6-E383-4A5C-A3D2-6A75D670393E}" Global="false">
@@ -254,6 +254,12 @@
 											<ObjectRef Name="State_juicy_music" ID="{431002E0-EA22-402E-8BB4-FF36180BD112}" WorkUnitID="{7D885A61-6FDD-41A5-892B-AC6A054BF709}"/>
 										</Element>
 									</ElementList>
+								</Action>
+								<Action Name="Set State" ID="{2445E053-638D-4B2A-AA1F-19FA3816A6D1}" ShortID="127707318" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="Player_life" ID="{3843A132-A87A-4D3D-90F6-D854532A95CE}"/>
+										<GroupItem Name="Alive" ID="{D545BAF4-88E3-44E1-89E5-FFAC84C50B6A}"/>
+									</SetItemParam>
 								</Action>
 							</ChildrenList>
 						</Event>

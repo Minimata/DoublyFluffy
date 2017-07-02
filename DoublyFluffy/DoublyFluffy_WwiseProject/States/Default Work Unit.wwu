@@ -15,7 +15,7 @@
 				</StateGroup>
 				<StateGroup Name="Player_life" ID="{3843A132-A87A-4D3D-90F6-D854532A95CE}">
 					<PropertyList>
-						<Property Name="DefaultTransitionTime" Type="Real64" Value="5"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="3"/>
 					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{DD72E849-3EF1-4936-A93C-F627E8BEC6B0}"/>
