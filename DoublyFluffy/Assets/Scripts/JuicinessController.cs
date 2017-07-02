@@ -7,6 +7,8 @@ public class JuicinessController : MonoBehaviour, IRestartable
 {
 
     [HideInInspector] public float juice;
+    private float oldJuice;
+    [SerializeField] [Range(0.0f, 1.0f)] private float damper = 0.8f;
     [HideInInspector] public int currentState;
     private int oldState;
 
@@ -49,7 +51,7 @@ public class JuicinessController : MonoBehaviour, IRestartable
         yellowIncrement = defaultYellowIncrement;
         blueIncrement = defaultBlueIncrement;
 
-        juice = defaultJuice;
+        juice = oldJuice = defaultJuice;
         oldState = currentState = 1;
     }
 	
@@ -119,7 +121,9 @@ public class JuicinessController : MonoBehaviour, IRestartable
         if (!isTurbo)
         {
             turboTime = defaultTurboTime;
-            juice += increment * isBlue;
+            float tmpjuice = juice + increment * isBlue;
+            juice = (1.0f - damper)*oldJuice + damper*tmpjuice;
+            oldJuice = juice;
         }
         else
         {

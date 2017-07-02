@@ -30,7 +30,6 @@ public class PlayerController : MonoBehaviour, IRestartable, IAnimable {
 	// Update is called once per frame
 	void Update () {
         //Inputs and moving behavior
-        print(positionOnLane);
         if (Input.GetKeyDown ("right")) {
 			if (positionOnLane < GameController.instance.nbLanes - 1) {
 				positionOnLane++;
@@ -93,11 +92,13 @@ public class PlayerController : MonoBehaviour, IRestartable, IAnimable {
 
     void IAnimable.AnimMoveLeft()
     {
+        AkSoundEngine.PostEvent("Switchlane", gameObject);
         anim.SetTrigger("MoveLeft");
     }
 
     void IAnimable.AnimMoveRight()
     {
+        AkSoundEngine.PostEvent("Switchlane", gameObject);
         anim.SetTrigger("MoveRight");
     }
     void IAnimable.Explode()
