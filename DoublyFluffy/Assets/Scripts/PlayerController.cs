@@ -9,15 +9,11 @@ public class PlayerController : MonoBehaviour, IRestartable {
 	[SerializeField] private int positionOnLane = 0;
     [SerializeField] private int defaultPositionOnLane = 2;
 
-    [SerializeField] private int defaultYellowIncrement = 1;
-    [SerializeField] private int defaultBlueIncrement = -1;
-
     public float horizontalSpeed = 10f;
 
     public GameObject juiciness;
     private JuicinessController juicy;
-
-    private int juiceIncrement;
+    
 	private bool levelEnded = false;
 
     // Use this for initialization
@@ -51,19 +47,18 @@ public class PlayerController : MonoBehaviour, IRestartable {
 
         //Juice control
 		if(!levelEnded)
-	    	juicy.juice += juiceIncrement;
+	    	juicy.Increment();
 	}
 
     void OnTriggerStay2D(Collider2D other)
     {
-       if (other.tag == "LaneBlue") juiceIncrement = defaultBlueIncrement;
-       else if (other.tag == "LaneYellow") juiceIncrement = defaultYellowIncrement;
+       if (other.tag == "LaneBlue") juicy.isBlue = -1;
+       else if (other.tag == "LaneYellow") juicy.isBlue = 1;
     }
 
     void IRestartable.Restart(GameController controller)
     {
         positionOnLane = defaultPositionOnLane;
-        juiceIncrement = 0;
 		levelEnded = false;
     }
 

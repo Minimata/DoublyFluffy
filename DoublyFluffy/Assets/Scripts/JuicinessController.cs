@@ -1,21 +1,41 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class JuicinessController : MonoBehaviour, IRestartable
 {
 
-    [HideInInspector] public int juice;
+    [HideInInspector] public float juice;
     [HideInInspector] public int currentState;
     private int oldState;
 
-    public int maxJuice = 1000;
-    [SerializeField] private int defaultJuice = 100;
-    [SerializeField] private int nbStates = 10;
+    public int maxJuice = 500;
+    [SerializeField] private float defaultJuice = 100;
+    [SerializeField] private int nbStates = 5;
+
+    [HideInInspector] public int isBlue = 0;
+
+    [SerializeField]
+    private float defaultBlueIncrement = -1;
+    [SerializeField]
+    private float defaultYellowIncrement = 5;
+    [SerializeField]
+    private float accelerationFactor = 1.0f;
+    [SerializeField]
+    private float linearFactor = 1.0f;
+
+    private float increment = 0.0f;
+    private float yellowIncrement = 1.0f;
+    private float blueIncrement = 1.33f;
+
 
     // Use this for initialization
     void Start ()
     {
+        yellowIncrement = defaultYellowIncrement;
+        blueIncrement = defaultBlueIncrement;
+
         juice = defaultJuice;
         oldState = currentState = 1;
     }
@@ -23,8 +43,8 @@ public class JuicinessController : MonoBehaviour, IRestartable
 	// Update is called once per frame
 	void Update ()
 	{
-        int stateWidth = maxJuice / nbStates;
-	    currentState = juice / stateWidth;
+        float stateWidth = maxJuice / nbStates;
+	    currentState = Convert.ToInt32(juice/stateWidth);
 
 	    if (juice < 0)
 	    {
@@ -42,10 +62,16 @@ public class JuicinessController : MonoBehaviour, IRestartable
 	    if (oldState < currentState) AkSoundEngine.PostEvent("State_down", gameObject);
         else if (oldState > currentState) AkSoundEngine.PostEvent("State_Up", gameObject);
 
-	    switch (currentState)
+        if(isBlue < 0)
+            increment = juice * accelerationFactor * blueIncrement;
+        else if (isBlue > 0)
+            increment = juice * accelerationFactor * yellowIncrement;
+
+        switch (currentState)
         {
             case 0:
                 AkSoundEngine.PostEvent("ToState0", null);
+                increment += linearFactor;
                 break;
             case 1:
                 AkSoundEngine.PostEvent("ToState1", null);
@@ -66,8 +92,17 @@ public class JuicinessController : MonoBehaviour, IRestartable
 
 	}
 
+    public void Increment()
+    {
+        juice += increment*isBlue;
+        print(increment);
+    }
+
     void IRestartable.Restart(GameController controller)
     {
+        isBlue = 0;
+        blueIncrement = defaultBlueIncrement;
+        yellowIncrement = defaultYellowIncrement;
         juice = defaultJuice;
     }
 
